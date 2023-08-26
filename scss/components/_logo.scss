@@ -1,0 +1,11 @@
+.logo {
+  &-index {
+    @include sizes(300px, auto);
+    margin-bottom: 30px;
+    &-div {
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+  }
+}

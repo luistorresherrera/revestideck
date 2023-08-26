@@ -1,0 +1,45 @@
+.hero {
+  &-full {
+    z-index: 1;
+    @include sizes(100%, 100vh);
+    // background-image: linear-gradient(
+    //     to bottom,
+    //     rgba(0, 0, 0, 0.9) 0%,
+    //     rgba(0, 0, 0, 0.3) 100%
+    //   ),
+    //   url("../images/background/deck-piscina.jpeg");
+    background-image: radial-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0)
+    );
+    display: flex;
+    flex-direction: column;
+    color: white;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    & p {
+      margin-top: 30px;
+    }
+  }
+}
+
+.specs {
+  z-index: 1;
+  width: 70%;
+  padding: 20px;
+  color: $primary_color_light;
+  & img {
+    height: 80px;
+    width: auto;
+  }
+  & p {
+    font-size: 12px;
+  }
+
+  &-items {
+    width: 10%;
+  }
+}
