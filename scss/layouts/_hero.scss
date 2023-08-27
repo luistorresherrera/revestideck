@@ -33,4 +33,7 @@
   padding-left: 10%;
   padding-right: 10%;
   color: $primary_color_light;
+  & p {
+    font-size: 14px;
+  }
 }

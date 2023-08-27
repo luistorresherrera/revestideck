@@ -33,11 +33,14 @@
   padding-right: 10%;
   color: #ffffff;
 }
+.specs p {
+  font-size: 14px;
+}
 
 .logo-index {
   width: 300px;
   height: auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .logo-index-div {
   width: 100%;
@@ -59,7 +62,7 @@
   background-color: #0485a7;
 }
 .boton-index-div {
-  height: 60px;
+  height: 50px;
 }
 
 .carousel {
@@ -75,13 +78,13 @@
 }
 
 .slogan {
-  font-size: 30px;
+  font-size: 20px;
   padding-left: 10%;
   padding-right: 10%;
 }
 
 .parrafo-carousel {
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 20px;
 }
 
