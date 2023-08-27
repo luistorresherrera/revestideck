@@ -50,16 +50,16 @@
 
 .boton-index-a {
   font-size: 20px;
-  color: #0485a7;
+  color: #0485a7 !important;
   text-decoration: none;
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   padding: 10px;
   border-radius: 10px;
   text-align: center;
 }
 .boton-index-a:hover {
-  color: #ffffff;
-  background-color: #0485a7;
+  color: #ffffff !important;
+  background-color: #0485a7 !important;
 }
 .boton-index-div {
   height: 50px;
