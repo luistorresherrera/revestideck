@@ -27,19 +27,11 @@
 
 .specs {
   z-index: 1;
-  width: 70%;
-  padding: 20px;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
   color: #ffffff;
-}
-.specs img {
-  height: 80px;
-  width: auto;
-}
-.specs p {
-  font-size: 12px;
-}
-.specs-items {
-  width: 10%;
 }
 
 .logo-index {
