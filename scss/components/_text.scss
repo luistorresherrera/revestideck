@@ -1,0 +1,19 @@
+.slogan {
+  font-size: 20px;
+
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.tituloH1 {
+  & h1 {
+    font-size: 13.5px;
+    color: $primary_color_light !important;
+  }
+  &-nav {
+    & h1 {
+      font-size: 11px;
+      color: black !important;
+    }
+  }
+}
