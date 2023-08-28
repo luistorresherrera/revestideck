@@ -1,0 +1,10 @@
+.carousel {
+  @include sizes(100%, 100vh);
+
+  &-inner {
+    background-color: black;
+  }
+  &-img {
+    @include sizes(100%, 100vh);
+  }
+}
