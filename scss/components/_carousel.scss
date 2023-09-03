@@ -1,10 +1,15 @@
 .carousel {
   @include sizes(100%, 100vh);
-
+  position: fixed;
+  top: 0px;
+  left: 0px;
   &-inner {
     background-color: black;
   }
   &-img {
     @include sizes(100%, 100vh);
+    object-fit: cover;
+    top: 0px;
+    left: 0px;
   }
 }

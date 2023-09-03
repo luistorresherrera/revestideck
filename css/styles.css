@@ -1,17 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
   margin: 0px;
   padding: 0px;
 }
 
 * {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 .hero-full {
   z-index: 1;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-image: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
   display: flex;
   flex-direction: column;
@@ -31,20 +31,98 @@
   background-size: cover;
 }
 
+.navbar {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85));
+  z-index: 2;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+.navbar-toggler {
+  border: #0485a7 2px solid;
+  color: rgba(0, 0, 255, 0);
+}
+.navbar svg {
+  width: 40px;
+  height: 40px;
+  fill: #0485a7;
+  stroke: #0485a7;
+}
+.navbar:focus {
+  background-color: #0485a7;
+  box-shadow: none !important;
+}
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.nav-link {
+  font-size: 18px;
+  color: #0485a7;
+  text-decoration: none;
+  text-align: center;
+}
+
+.quote {
+  font-size: 18px;
+  color: #0485a7;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-family: "Ubuntu", sans-serif;
+  border: 2px #0485a7 solid !important;
+  cursor: pointer;
+}
+.quote:hover {
+  background-color: #0485a7;
+  color: #ffffff;
+}
+
+.container-subhero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/background/deck-colores.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .specs {
   z-index: 1;
   width: 100%;
-  padding-bottom: 20px;
-  padding-left: 10%;
-  padding-right: 10%;
-  color: #ffffff;
+  height: 25vh;
+  position: absolute;
+  top: 75vh;
+  left: 0px;
 }
-.specs p {
-  font-size: 14px;
+.specs-title {
+  color: #ffffff;
+  font-weight: bold;
+}
+.specs-title img {
+  width: 30px;
+  height: auto;
+}
+.specs-detail {
+  width: 100%;
+  height: 20vh;
+  background: rgba(4, 133, 167, 0.95);
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  overflow: hidden;
 }
 
-.navbar {
-  background-color: #ffffff !important;
+.sello-calidad {
+  z-index: 2;
+  position: absolute;
+  top: 70vh;
+  left: 20px;
+}
+.sello-calidad img {
+  width: 150px;
+  height: auto;
 }
 
 .logo-index {
@@ -76,8 +154,9 @@
   color: #0485a7;
   text-decoration: none;
   background-color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   text-align: center;
 }
 .boton-index-a:hover {
@@ -91,6 +170,9 @@
 .carousel {
   width: 100%;
   height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
 .carousel-inner {
   background-color: black;
@@ -98,6 +180,9 @@
 .carousel-img {
   width: 100%;
   height: 100vh;
+  object-fit: cover;
+  top: 0px;
+  left: 0px;
 }
 
 .slogan {
@@ -106,13 +191,32 @@
   padding-right: 10%;
 }
 
-.tituloH1 h1 {
-  font-size: 13.5px;
-  color: #ffffff !important;
+h2 {
+  font-weight: bolder;
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-family: "Ubuntu", sans-serif;
 }
-.tituloH1-nav h1 {
+
+.typed {
+  font-weight: bolder;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-family: "Ubuntu", sans-serif;
+}
+.typed-word {
+  background-color: #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  color: #0485a7;
+}
+
+h1 {
   font-size: 11px;
-  color: black !important;
+  color: #9d9d9c;
+  font-family: "Ubuntu", sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */

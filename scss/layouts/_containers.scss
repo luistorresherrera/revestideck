@@ -1,0 +1,39 @@
+.container {
+  &-subhero {
+    @include sizes(100%, 100vh);
+    background-image: url("../images/background/deck-colores.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.specs {
+  z-index: 1;
+  @include sizes(100%, 25vh);
+  position: absolute;
+  top: 75vh;
+  left: 0px;
+  &-title {
+    color: $white_color;
+    font-weight: bold;
+    & img {
+      @include sizes(30px, auto);
+    }
+  }
+  &-detail {
+    @include sizes(100%, 20vh);
+    background: rgba(4, 133, 167, 0.95);
+    display: flex;
+    flex-direction: column;
+    color: $white_color;
+    overflow: hidden;
+  }
+}
+.sello-calidad {
+  z-index: 2;
+  position: absolute;
+  top: 70vh;
+  left: 20px;
+  & img {
+    @include sizes(150px, auto);
+  }
+}

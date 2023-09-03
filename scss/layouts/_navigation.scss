@@ -1,5 +1,51 @@
 .nav {
   &bar {
-    background-color: $primary_color_light !important;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    );
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    &-toggler {
+      border: $blue_color 2px solid;
+      color: rgba(0, 0, 255, 0);
+    }
+    & svg {
+      @include sizes(40px, 40px);
+      fill: $blue_color;
+      stroke: $blue_color;
+    }
+    &:focus {
+      background-color: $blue_color;
+      box-shadow: none !important;
+    }
+  }
+
+  &-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  &-link {
+    @include navlinksitems();
+    text-align: center;
+  }
+}
+
+.quote {
+  @include navlinksitems();
+  padding: 10px;
+  background-color: $white_color;
+  border-radius: 5px;
+  @include ubuntu();
+  border: 2px $blue_color solid !important;
+  cursor: pointer;
+  &:hover {
+    background-color: $blue_color;
+    color: $white_color;
   }
 }

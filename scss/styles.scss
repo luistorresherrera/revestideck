@@ -1,9 +1,10 @@
-@import "./base/reset.scss";
-@import "./base/typo.scss";
 @import "./utilities/variables.scss";
 @import "./utilities/mixins.scss";
+@import "./base/reset.scss";
+@import "./base/typo.scss";
 @import "./layouts/hero.scss";
 @import "./layouts/navigation.scss";
+@import "./layouts/containers.scss";
 @import "./components/logo.scss";
 @import "./components/button.scss";
 @import "./components/carousel.scss";

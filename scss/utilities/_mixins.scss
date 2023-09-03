@@ -2,3 +2,9 @@
   width: $width;
   height: $height;
 }
+
+@mixin navlinksitems() {
+  font-size: 18px;
+  color: $blue_color;
+  text-decoration: none;
+}
