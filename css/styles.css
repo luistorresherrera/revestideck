@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
   margin: 0px;
@@ -11,7 +12,7 @@
 .hero-full {
   z-index: 1;
   width: 100%;
-  height: 90vh;
+  height: 105vh;
   background-image: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
   display: flex;
   flex-direction: column;
@@ -32,7 +33,7 @@
 }
 
 .navbar {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95));
   z-index: 2;
   position: absolute;
   top: 0px;
@@ -89,11 +90,11 @@
 }
 
 .specs {
-  z-index: 1;
+  z-index: 2;
   width: 100%;
-  height: 25vh;
+  height: 500px;
   position: absolute;
-  top: 75vh;
+  top: 96vh;
   left: 0px;
 }
 .specs-title {
@@ -103,17 +104,31 @@
 .specs-title img {
   width: 30px;
   height: auto;
+  animation: bounce 2s ease-in-out infinite;
 }
 .specs-detail {
-  width: 100%;
-  height: 20vh;
-  background: rgba(4, 133, 167, 0.95);
-  display: flex;
-  flex-direction: column;
+  background-color: #0485a7 !important;
   color: #ffffff;
-  overflow: hidden;
+}
+.specs-detail-item {
+  padding: 30px;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+}
+.specs-detail-item img {
+  width: 80px;
+  height: auto;
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Inicial y final: sin cambio en la posición vertical */
+  }
+  50% {
+    transform: translateY(-20px); /* Punto más alto: sube 20px */
+  }
+}
 .sello-calidad {
   z-index: 2;
   position: absolute;
@@ -217,6 +232,46 @@ h1 {
   font-size: 11px;
   color: #9d9d9c;
   font-family: "Ubuntu", sans-serif;
+}
+
+h3 {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.accordion img {
+  width: 30px;
+  height: auto;
+  margin-right: 20px;
+  border: #0485a7;
+}
+.accordion-item {
+  background-color: none;
+}
+.accordion-button {
+  background-color: #0485a7;
+  color: #ffffff;
+  border: #0485a7;
+}
+.accordion-button:focus {
+  background-color: #0485a7;
+  border: #0485a7;
+}
+.accordion-button:active {
+  background-color: #0485a7;
+  border: #0485a7;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #0485a7;
+  color: #ffffff;
+  border: #0485a7;
+}
+.accordion-button:not(.collapsed)::after {
+  color: #ffffff;
+  background-image: url("../images/icons/specs/arrow.svg");
+}
+.accordion-button::after {
+  background-image: url("../images/icons/specs/arrow.svg");
 }
 
 /*# sourceMappingURL=styles.css.map */

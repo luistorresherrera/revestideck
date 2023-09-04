@@ -1,0 +1,35 @@
+.accordion {
+  & img {
+    @include sizes(30px, auto);
+    margin-right: 20px;
+    border: $blue_color;
+  }
+  &-item {
+    background-color: none;
+  }
+  &-button {
+    background-color: $blue_color;
+    color: $white_color;
+    border: $blue_color;
+    &:focus {
+      background-color: $blue_color;
+      border: $blue_color;
+    }
+    &:active {
+      background-color: $blue_color;
+      border: $blue_color;
+    }
+    &:not(.collapsed) {
+      background-color: $blue_color;
+      color: $white_color;
+      border: $blue_color;
+      &::after {
+        color: $white_color;
+        background-image: url("../images/icons/specs/arrow.svg");
+      }
+    }
+    &::after {
+      background-image: url("../images/icons/specs/arrow.svg");
+    }
+  }
+}

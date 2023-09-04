@@ -7,27 +7,49 @@
   }
 }
 .specs {
-  z-index: 1;
-  @include sizes(100%, 25vh);
+  z-index: 2;
+  @include sizes(100%, 500px);
   position: absolute;
-  top: 75vh;
+  top: 96vh;
   left: 0px;
+
   &-title {
     color: $white_color;
     font-weight: bold;
     & img {
       @include sizes(30px, auto);
+      animation: bounce 2s ease-in-out infinite;
     }
   }
   &-detail {
-    @include sizes(100%, 20vh);
-    background: rgba(4, 133, 167, 0.95);
-    display: flex;
-    flex-direction: column;
+    // @include sizes(100%, 100%);
+    background-color: $blue_color !important;
     color: $white_color;
-    overflow: hidden;
+
+    &-item {
+      padding: 30px;
+      text-align: center;
+      @include sizes(50%, 100%);
+
+      & img {
+        @include sizes(80px, auto);
+      }
+    }
   }
 }
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(
+      0
+    ); /* Inicial y final: sin cambio en la posición vertical */
+  }
+  50% {
+    transform: translateY(-20px); /* Punto más alto: sube 20px */
+  }
+}
+
 .sello-calidad {
   z-index: 2;
   position: absolute;
