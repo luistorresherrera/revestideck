@@ -1,6 +1,6 @@
 .carousel {
   @include sizes(100%, 100vh);
-  position: fixed;
+  position: absolute;
   top: 0px;
   left: 0px;
   &-inner {

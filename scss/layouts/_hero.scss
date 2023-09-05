@@ -1,7 +1,7 @@
 .hero {
   &-full {
     z-index: 1;
-    @include sizes(100%, 105vh);
+    @include sizes(100%, 100vh);
     background-image: radial-gradient(
       rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.2),

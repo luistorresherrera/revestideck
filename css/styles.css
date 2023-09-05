@@ -12,7 +12,7 @@
 .hero-full {
   z-index: 1;
   width: 100%;
-  height: 105vh;
+  height: 100vh;
   background-image: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
   display: flex;
   flex-direction: column;
@@ -94,12 +94,25 @@
   width: 100%;
   height: 500px;
   position: absolute;
-  top: 96vh;
+  top: 100vh;
   left: 0px;
 }
 .specs-title {
+  z-index: 3;
+  position: absolute;
+  top: 80vh;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+}
+.specs-title p span {
+  background-color: black;
+  padding: 10px;
+  opacity: 0.5;
+  border-radius: 5px;
 }
 .specs-title img {
   width: 30px;
@@ -185,7 +198,7 @@
 .carousel {
   width: 100%;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   top: 0px;
   left: 0px;
 }
@@ -207,7 +220,7 @@
 }
 
 h2 {
-  font-weight: bolder;
+  font-weight: lighter;
   font-size: 36px;
   color: #ffffff;
   margin-bottom: 40px;
@@ -226,6 +239,7 @@ h2 {
   padding-right: 5px;
   border-radius: 5px;
   color: #0485a7;
+  font-weight: bolder;
 }
 
 h1 {
