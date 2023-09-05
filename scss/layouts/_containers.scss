@@ -20,7 +20,7 @@
     color: $white_color;
     font-weight: lighter;
     font-size: 20px;
-    margin-top: 40px;
+
     @include sizes(100%, auto);
     & p span {
       background-color: black;
