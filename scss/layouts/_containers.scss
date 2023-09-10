@@ -94,7 +94,7 @@ section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/background/diseno.webp");
   background-position: center;
-  height: 75vh;
+  height: auto !important;
   overflow: hidden;
   background-attachment: fixed;
   background-size: cover;
