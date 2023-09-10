@@ -79,4 +79,9 @@ section {
 .row {
   padding-left: 5%;
   padding-right: 5%;
+  margin: 0px;
+  & p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
 }
