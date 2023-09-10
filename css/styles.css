@@ -161,7 +161,7 @@ section {
 .section-diseno {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background/diseno.webp");
   background-position: center;
-  height: 75vh;
+  height: auto !important;
   overflow: hidden;
   background-attachment: fixed;
   background-size: cover;
@@ -172,14 +172,6 @@ section {
 }
 .section-diseno input {
   width: 100%;
-}
-
-.ingeniero {
-  position: relative;
-  top: -324px;
-  right: -600px;
-  width: 100%;
-  text-align: end;
 }
 
 .section-final {
@@ -214,7 +206,9 @@ section {
 footer {
   background-color: #0485a7;
   height: auto;
-  padding: 2%;
+  min-height: 30vh;
+  padding: 3%;
+  padding-bottom: 50px !important;
   color: #ffffff !important;
 }
 footer img {
@@ -224,6 +218,18 @@ footer h4 {
   text-decoration: underline;
 }
 
+/* Para dispositivos pequeños (small) */
+@media (min-width: 0px) {
+  .footer-margin {
+    margin-top: 100px !important;
+  }
+}
+/* Para dispositivos medianos (medium) */
+@media (min-width: 992px) {
+  .footer-margin {
+    margin-top: 20px !important;
+  }
+}
 .logo-index {
   width: 180px;
   height: auto;

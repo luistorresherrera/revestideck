@@ -12,7 +12,9 @@
 footer {
   background-color: $blue_color;
   height: auto;
-  padding: 2%;
+  min-height: 30vh;
+  padding: 3%;
+  padding-bottom: 50px !important;
   color: $white_color !important;
   & img {
     height: 120px;

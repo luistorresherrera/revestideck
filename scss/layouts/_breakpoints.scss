@@ -1,0 +1,13 @@
+/* Para dispositivos pequeños (small) */
+@media (min-width: 0px) {
+  .footer-margin {
+    margin-top: 100px !important;
+  }
+}
+
+/* Para dispositivos medianos (medium) */
+@media (min-width: 992px) {
+  .footer-margin {
+    margin-top: 20px !important;
+  }
+}
