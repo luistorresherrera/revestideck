@@ -36,6 +36,13 @@ h1 {
 }
 
 h3 {
-  font-size: 14px;
-  padding-top: 10px;
+  font-size: 36px;
+  padding-top: 40px;
+  @include ubuntu();
+}
+
+h4 {
+  font-size: 16px;
+  padding-top: 5px;
+  @include ubuntu();
 }

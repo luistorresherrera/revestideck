@@ -1,0 +1,94 @@
+.card {
+  margin-top: 30px;
+  border-radius: 5px !important;
+  overflow: hidden;
+
+  &-product {
+    overflow: hidden;
+    &-image {
+      height: 200px;
+      overflow: hidden;
+
+      & img {
+        object-fit: cover;
+        @include sizes(100%, 200px);
+      }
+      &-type {
+        position: relative;
+        top: -50px;
+
+        padding: 5px;
+
+        padding: 10px;
+        & span {
+          color: $blue_color;
+          padding: 5px;
+          background-color: $white_color;
+          border: 1px $white_color solid;
+          @include ubuntu;
+          border-radius: 5px;
+        }
+      }
+    }
+    &-detail {
+      padding: 10px;
+      &-title {
+        height: 25px;
+        overflow: hidden;
+        @include ubuntu;
+        font-weight: bolder;
+      }
+      &-description {
+        height: 110px;
+        overflow: scroll;
+      }
+      &-button {
+        display: flex;
+        justify-content: space-between;
+        & a {
+          padding-top: 10px;
+          color: $gray_color;
+        }
+      }
+    }
+  }
+}
+
+.btnCotizarProducto {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: $blue_color;
+  color: $white_color !important;
+}
+
+.colors {
+  & svg {
+    width: 25px;
+    height: 30px;
+  }
+}
+.cafeoscuro {
+  fill: $product_color_cafeoscuro;
+}
+.gris {
+  fill: $product_color_gris;
+}
+.grisclaro {
+  fill: $product_color_grisclaro;
+}
+.cafecaoba {
+  fill: $product_color_cafecaoba;
+}
+.marronoscuro {
+  fill: $product_color_marronoscuro;
+}
+.marron {
+  fill: $product_color_marron;
+}
+.negro {
+  fill: $product_color_negro;
+}
+.marronclaro {
+  fill: $product_color_marronclaro;
+}

@@ -18,18 +18,12 @@
   flex-direction: column;
   color: white;
   overflow: hidden;
-  position: absolute;
+  position: relative;
   top: 0px;
   left: 0px;
 }
 .hero-full p {
   margin-top: 30px;
-}
-.hero-sub-index {
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background/deck-exterior.jpg");
-  background-size: cover;
 }
 
 .navbar {
@@ -89,16 +83,8 @@
   background-size: cover;
 }
 
-.specs {
-  z-index: 2;
-  width: 100%;
-  height: 500px;
-  position: absolute;
-  top: 100vh;
-  left: 0px;
-}
-.specs-title {
-  z-index: 3;
+.products-title {
+  z-index: 5;
   position: absolute;
   top: 80vh;
   color: #ffffff;
@@ -107,30 +93,39 @@
   width: 100%;
   height: auto;
 }
-.specs-title p span {
+.products-title p a {
   background-color: black;
+  text-decoration: none;
   padding: 10px;
   opacity: 0.5;
   border-radius: 5px;
+  color: #ffffff !important;
 }
-.specs-title img {
+.products-title img {
   width: 30px;
   height: auto;
   animation: bounce 2s ease-in-out infinite;
 }
+
+.specs-container {
+  padding: 10px;
+}
+.specs-item {
+  display: flex;
+  flex-direction: column;
+}
+.specs-item-icon {
+  height: 100px;
+  width: auto;
+  margin-bottom: 10px;
+}
 .specs-detail {
-  background-color: #0485a7 !important;
-  color: #ffffff;
+  background-color: #ffffff !important;
+  color: #0485a7;
 }
-.specs-detail-item {
-  padding: 30px;
-  text-align: center;
-  width: 50%;
-  height: 100%;
-}
-.specs-detail-item img {
-  width: 80px;
-  height: auto;
+.specs-detail-title h2 {
+  color: #0485a7;
+  margin-top: 40px;
 }
 
 @keyframes bounce {
@@ -141,15 +136,14 @@
     transform: translateY(-20px); /* Punto más alto: sube 20px */
   }
 }
-.sello-calidad {
-  z-index: 2;
-  position: absolute;
-  top: 70vh;
-  left: 20px;
+section {
+  width: 100%;
+  height: 75vh;
 }
-.sello-calidad img {
-  width: 150px;
-  height: auto;
+
+.row {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .logo-index {
@@ -174,6 +168,104 @@
   height: 46px;
   margin-top: 10px;
   margin-bottom: 3px;
+}
+
+.card {
+  margin-top: 30px;
+  border-radius: 5px !important;
+  overflow: hidden;
+}
+.card-product {
+  overflow: hidden;
+}
+.card-product-image {
+  height: 200px;
+  overflow: hidden;
+}
+.card-product-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+.card-product-image-type {
+  position: relative;
+  top: -50px;
+  padding: 5px;
+  padding: 10px;
+}
+.card-product-image-type span {
+  color: #0485a7;
+  padding: 5px;
+  background-color: #ffffff;
+  border: 1px #ffffff solid;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 5px;
+}
+.card-product-detail {
+  padding: 10px;
+}
+.card-product-detail-title {
+  height: 25px;
+  overflow: hidden;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+}
+.card-product-detail-description {
+  height: 110px;
+  overflow: scroll;
+}
+.card-product-detail-button {
+  display: flex;
+  justify-content: space-between;
+}
+.card-product-detail-button a {
+  padding-top: 10px;
+  color: #9d9d9c;
+}
+
+.btnCotizarProducto {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #0485a7;
+  color: #ffffff !important;
+}
+
+.colors svg {
+  width: 25px;
+  height: 30px;
+}
+
+.cafeoscuro {
+  fill: #635147;
+}
+
+.gris {
+  fill: #756f72;
+}
+
+.grisclaro {
+  fill: #756f72;
+}
+
+.cafecaoba {
+  fill: #c68e7c;
+}
+
+.marronoscuro {
+  fill: #8e622e;
+}
+
+.marron {
+  fill: #a49586;
+}
+
+.negro {
+  fill: #2d2d2d;
+}
+
+.marronclaro {
+  fill: #e7cd94;
 }
 
 .boton-index-a {
@@ -248,8 +340,15 @@ h1 {
 }
 
 h3 {
-  font-size: 14px;
-  padding-top: 10px;
+  font-size: 36px;
+  padding-top: 40px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h4 {
+  font-size: 16px;
+  padding-top: 5px;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .accordion img {
@@ -262,8 +361,8 @@ h3 {
   background-color: none;
 }
 .accordion-button {
-  background-color: #0485a7;
-  color: #ffffff;
+  background-color: #f4f4f4;
+  color: #000000;
   border: #0485a7;
 }
 .accordion-button:focus {
