@@ -1,0 +1,18 @@
+.card-productos-cotizacion {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid $gray_color;
+  margin-bottom: 10px;
+  cursor: pointer;
+  &:hover {
+    border: 2px solid $blue_color;
+    background-color: $gray_light_color;
+  }
+}
+.image-cotizacion {
+  & img {
+    @include sizes(100px, 100px);
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
