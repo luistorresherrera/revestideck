@@ -2,6 +2,9 @@
 @media (min-width: 0px) {
   .footer-margin {
     margin-top: 100px !important;
+    & h4 {
+      margin-top: -60px !important;
+    }
   }
 }
 
@@ -9,5 +12,8 @@
 @media (min-width: 992px) {
   .footer-margin {
     margin-top: 20px !important;
+    & h4 {
+      margin-top: 0px !important;
+    }
   }
 }
