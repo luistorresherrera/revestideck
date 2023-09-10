@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "nombre": "Deck WPC",
+    "precio_tabla": "11000",
+    "precio_m2": "33000",
+    "largo_cm": "2200",
+    "ancho_cm": "150",
+    "espesor_mm": "25"
+  },
+  {
+    "id": "2",
+    "nombre": "Cortavista WPC",
+    "precio_tabla": "18000",
+    "precio_m2": "18000",
+    "largo_cm": "2200",
+    "ancho_cm": "70",
+    "espesor_mm": "25"
+  },
+  {
+    "id": "3",
+    "nombre": "Wall Panel WPC",
+    "precio_tabla": "18000",
+    "precio_m2": "18000",
+    "largo_cm": "2800",
+    "ancho_cm": "128",
+    "espesor_mm": "25"
+  },
+  {
+    "id": "4",
+    "nombre": "Wall Panel",
+    "precio_tabla": "18000",
+    "precio_m2": "18000",
+    "largo_cm": "2800",
+    "ancho_cm": "121",
+    "espesor_mm": "12"
+  },
+  {
+    "id": "5",
+    "nombre": "Siding WPC",
+    "precio_tabla": "18000",
+    "precio_m2": "18000",
+    "largo_cm": "2200",
+    "ancho_cm": "157",
+    "espesor_mm": "21"
+  }
+]

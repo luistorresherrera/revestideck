@@ -12,9 +12,9 @@
       crossorigin="anonymous"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
     <!-- FAVICON -->
-    <link rel="icon" type="image/x-icon" href="./images/corp/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="../../images/corp/favicon.svg" />
   </head>
   <body>
     <header>
@@ -23,7 +23,7 @@
       <nav class="navbar navbar-expand-lg align-middle">
         <div class="nav-logoDiv d-flex justify-content-around">
           <img
-            src="./images/corp/favicon.svg"
+            src="../../images/corp/favicon.svg"
             alt="Bootstrap"
             class="logo-isotipoNav"
           />
@@ -32,7 +32,7 @@
               <a class="navbar-brand" href="#"
                 ><img
                   class="logo-nombreNav"
-                  src="./images/corp/nombre-revestideck.svg"
+                  src="../../images/corp/nombre-revestideck.svg"
               /></a>
             </div>
             <div class="tituloH1-nav align-middle">
@@ -82,68 +82,46 @@
     </header>
 
     <main>
-      <!-- HERO CAROUSEL -->
-      <div
-        id="carouselExampleFade"
-        class="carousel slide carousel-fade"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2000">
-            <img
-              src="./images/background/piscina-WPC.webp"
-              class="d-block carousel-img"
-              alt="..."
-            />
+      <!-- HERO PRODUCTO -->
+      <div class="hero-producto row justify-content-around">
+        <div
+          class="col-12 col-lg-8 d-flex flex-column justify-content-end"
+          style="background-color: red"
+        >
+          <div class="producto-picture w-100" style="background-color: green">
+            1
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img
-              src="./images/background/deck-quincho.webp"
-              class="d-block carousel-img"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img
-              src="./images/background/deck-exterior2.jpg"
-              class="d-block carousel-img"
-              alt="..."
-            />
+          <div class="producto-colores w-100" style="background-color: yellow">
+            2
           </div>
         </div>
-      </div>
-
-      <!-- División de texto delantero -->
-      <div class="hero-full justify-content-center align-items-center">
-        <div class="w-100 d-flex container text-center justify-content-center">
-          <h2>
-            Obtén los mejores diseños con productos
-            <span class="typed"></span>
-            <span class="text-center" id="cadenas-texto">
-              <span class="typedTexto"
-                >de <span class="typed-word">GRAN DURACIÓN</span></span
-              >
-              <span class="typedTexto"
-                >de <span class="typed-word">RÁPIDA INSTALACIÓN</span></span
-              >
-              <span class="typedTexto"
-                >de <span class="typed-word">FACIL MANTENIMIENTO</span></span
-              >
-              <span class="typedTexto"
-                >a <span class="typed-word">BUEN PRECIO</span></span
-              >
-            </span>
-          </h2>
-        </div>
-      </div>
-      <div class="products-title text-center">
-        <p>
-          <a href="#productos" style="cursor: pointer"
-            >Conoce los productos que tenemos para ti</a
+        <div
+          class="col-12 col-lg-4 d-flex align-items-end justify-content-center"
+        >
+          <div
+            class="producto-cotizador align-items-start justify-content-start"
           >
-        </p>
-
-        <img src="./images/icons/specs/arrow.svg" />
+            <h2>Cotiza ahora</h2>
+            <p>
+              Coloca las cantidades que necesitas del producto y tus datos de
+              contacto:
+            </p>
+            <form>
+              <div><lable>Código de producto:</lable></div>
+              <div><input type="text" disabled="true" class="w-100" /></div>
+              <div><lable>Nombre de producto:</lable></div>
+              <div><input type="text" disabled="true" class="w-100" /></div>
+              <div>Selecciona la forma en la que deseas cotizar:</div>
+              <div>
+                <select id="selectTipoCotizacion" class="form-select">
+                  <option>Por metro cuadrado (m2)</option>
+                  <option>Por tabla</option>
+                </select>
+              </div>
+            </form>
+            <div class="w-100 btnDiseno text-center">Enviar cotización</div>
+          </div>
+        </div>
       </div>
       <section>
         <div id="productos" class="row col-12 text-center">
@@ -154,7 +132,7 @@
           <div class="col-11 col-sm-11 col-md-4 col-lg-4 col-xl-4">
             <div class="card">
               <div class="card-product-image">
-                <img src="./images/productos/deck-wpc.jpeg" />
+                <img src="../../images/productos/deck-wpc.jpeg" />
                 <div class="card-product-image-type text-end">
                   <span>Exterior / Interior</span>
                 </div>
@@ -180,16 +158,8 @@
                 </div>
 
                 <div class="card-product-detail-button align-self-end">
-                  <a
-                    href="./pages/productos/deck_wpc.html"
-                    class="btnMasDetalles"
-                    >Más información</a
-                  >
-                  <a
-                    href="./pages/productos/deck_wpc.html"
-                    class="btnCotizarProducto"
-                    >Cotizar</a
-                  >
+                  <a href="" class="btnMasDetalles">Más información</a>
+                  <a href="" class="btnCotizarProducto">Cotizar</a>
                 </div>
               </div>
             </div>
@@ -197,7 +167,7 @@
           <div class="col-11 col-sm-11 col-md-4 col-lg-4 col-xl-4">
             <div class="card">
               <div class="card-product-image">
-                <img src="./images/productos/cortavista-wpc.jpeg" />
+                <img src="../../images/productos/cortavista-wpc.jpeg" />
                 <div class="card-product-image-type text-end">
                   <span>Exterior / Interior</span>
                 </div>
@@ -226,7 +196,7 @@
           <div class="col-11 col-sm-11 col-md-4 col-lg-4 col-xl-4">
             <div class="card">
               <div class="card-product-image">
-                <img src="./images/productos/wall-panel-wpc.jpeg" />
+                <img src="../../images/productos/wall-panel-wpc.jpeg" />
                 <div class="card-product-image-type text-end">
                   <span>Exterior / Interior</span>
                 </div>
@@ -255,7 +225,7 @@
           <div class="col-11 col-sm-11 col-md-4 col-lg-4 col-xl-4">
             <div class="card">
               <div class="card-product-image">
-                <img src="./images/productos/wall-panel-interior.webp" />
+                <img src="../../images/productos/wall-panel-interior.webp" />
                 <div class="card-product-image-type text-end">
                   <span>Interior</span>
                 </div>
@@ -283,7 +253,7 @@
           <div class="col-11 col-sm-11 col-md-4 col-lg-4 col-xl-4">
             <div class="card">
               <div class="card-product-image">
-                <img src="./images/productos/siding-wpc.jpeg" />
+                <img src="../../images/productos/siding-wpc.jpeg" />
                 <div class="card-product-image-type text-end">
                   <span>Exterior</span>
                 </div>
@@ -336,7 +306,7 @@
               <div class="specs-item">
                 <img
                   class="specs-item-icon"
-                  src="./images/icons/specs/water-proof.svg"
+                  src="../../images/icons/specs/water-proof.svg"
                 />
                 <h4>Resistente al agua</h4>
               </div>
@@ -347,7 +317,7 @@
               <div class="specs-item">
                 <img
                   class="specs-item-icon"
-                  src="./images/icons/specs/termite-resistance.svg"
+                  src="../../images/icons/specs/termite-resistance.svg"
                 />
                 <h4>Resistente a las termitas</h4>
               </div>
@@ -358,7 +328,7 @@
               <div class="specs-item">
                 <img
                   class="specs-item-icon"
-                  src="./images/icons/specs/weather-resistance.svg"
+                  src="../../images/icons/specs/weather-resistance.svg"
                 />
                 <h4>Resistente a climas extremos</h4>
               </div>
@@ -369,7 +339,7 @@
               <div class="specs-item">
                 <img
                   class="specs-item-icon"
-                  src="./images/icons/specs/sustainability.svg"
+                  src="../../images/icons/specs/sustainability.svg"
                 />
                 <h4>Sostenible con el medio ambiente</h4>
               </div>
@@ -380,7 +350,7 @@
               <div class="specs-item">
                 <img
                   class="specs-item-icon"
-                  src="./images/icons/specs/mold-resistance.svg"
+                  src="../../images/icons/specs/mold-resistance.svg"
                 />
                 <h4>Resistente al moho y humedad</h4>
               </div>
@@ -391,7 +361,7 @@
               <div class="specs-item">
                 <img
                   class="specs-item-icon"
-                  src="./images/icons/specs/crash-resistance.svg"
+                  src="../../images/icons/specs/crash-resistance.svg"
                 />
                 <h4>Resistente a los impactos</h4>
               </div>
@@ -677,44 +647,44 @@
           <div
             class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center"
           >
-            <img src="./images/icons/tiempo-reducido-instalacion.svg" />
+            <img src="../../images/icons/tiempo-reducido-instalacion.svg" />
             <h4>Reduce tiempos y costos de instalación</h4>
           </div>
           <div
             class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center"
           >
-            <img src="./images/icons/ahorro-mantenimiento.svg" />
+            <img src="../../images/icons/ahorro-mantenimiento.svg" />
             <h4>Minimiza el costo de mantenimiento</h4>
           </div>
           <div
             class="col-6 col-xs- col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center"
           >
-            <img src="./images/icons/stock.svg" />
+            <img src="../../images/icons/stock.svg" />
             <h4>Stock variado de productos</h4>
           </div>
           <div
             class="col-6 col-xs- col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center"
           >
-            <img src="./images/icons/distribucion.svg" />
+            <img src="../../images/icons/distribucion.svg" />
             <h4>Distribución en todo Chile</h4>
           </div>
           <div
             class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center"
           >
-            <img src="./images/icons/design.svg" />
+            <img src="../../images/icons/design.svg" />
             <h4>Soporte en el diseño e instalación</h4>
           </div>
           <div
             class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center"
           >
-            <img src="./images/icons/asesoria.svg" />
+            <img src="../../images/icons/asesoria.svg" />
             <h4>Asesoría personalizada</h4>
           </div>
         </div>
       </section>
 
       <div class="sello-calidad">
-        <img src="./images/icons/calidad.png" />
+        <img src="../../images/icons/calidad.png" />
       </div>
     </main>
     <footer>
@@ -725,7 +695,7 @@
           <div
             class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 footer-margin text-center text-lg-start"
           >
-            <img src="./images/corp/logo-footer.svg" />
+            <img src="../../images/corp/logo-footer.svg" />
           </div>
           <div
             class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 footer-margin text-center text-lg-start"
@@ -775,25 +745,23 @@
             ></button>
           </div>
           <div class="modal-body">
-            <a href="./pages/productos/deck_wpc.html"
-              ><div class="d-flex flex-row card-productos-cotizacion">
-                <div class="image-cotizacion">
-                  <img src="./images/productos/deck-wpc.jpeg" />
-                </div>
-                <div class="row d-flex flex-column">
-                  <div><h4>Deck WPC</h4></div>
-                  <div>
-                    <p>
-                      Ideal para piscinas, quinchos, casas de playa, terrazas e
-                      interiores elegantes.
-                    </p>
-                  </div>
-                </div>
-              </div></a
-            >
             <div class="d-flex flex-row card-productos-cotizacion">
               <div class="image-cotizacion">
-                <img src="./images/productos/deck-wpc.jpeg" />
+                <img src="../../images/productos/deck-wpc.jpeg" />
+              </div>
+              <div class="row d-flex flex-column">
+                <div><h4>Deck WPC</h4></div>
+                <div>
+                  <p>
+                    Ideal para piscinas, quinchos, casas de playa, terrazas e
+                    interiores elegantes.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-row card-productos-cotizacion">
+              <div class="image-cotizacion">
+                <img src="../../images/productos/deck-wpc.jpeg" />
               </div>
               <div class="row d-flex flex-column">
                 <div><h4>Cortavista WPC</h4></div>
@@ -807,7 +775,7 @@
             </div>
             <div class="d-flex flex-row card-productos-cotizacion">
               <div class="image-cotizacion">
-                <img src="./images/productos/deck-wpc.jpeg" />
+                <img src="../../images/productos/deck-wpc.jpeg" />
               </div>
               <div class="row d-flex flex-column">
                 <div><h4>Wall Panel</h4></div>
@@ -821,7 +789,7 @@
             </div>
             <div class="d-flex flex-row card-productos-cotizacion">
               <div class="image-cotizacion">
-                <img src="./images/productos/deck-wpc.jpeg" />
+                <img src="../../images/productos/deck-wpc.jpeg" />
               </div>
               <div class="row d-flex flex-column">
                 <div><h4>Wall Panel</h4></div>
@@ -835,7 +803,7 @@
             </div>
             <div class="d-flex flex-row card-productos-cotizacion">
               <div class="image-cotizacion">
-                <img src="./images/productos/deck-wpc.jpeg" />
+                <img src="../../images/productos/deck-wpc.jpeg" />
               </div>
               <div class="row d-flex flex-column">
                 <div><h4>Siding WPC</h4></div>

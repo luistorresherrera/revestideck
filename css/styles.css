@@ -26,6 +26,33 @@
 .hero-full p {
   margin-top: 30px;
 }
+.hero-producto {
+  height: 100vh;
+}
+
+.producto-picture {
+  height: 60%;
+}
+.producto-colores {
+  height: 20%;
+}
+.producto-cotizador {
+  height: 80%;
+  border: 1px solid #9d9d9c;
+  width: 80%;
+  background-color: #f4f4f4;
+  padding: 5%;
+  border-radius: 5px;
+}
+.producto-cotizador h2 {
+  color: #0485a7 !important;
+}
+.producto-cotizador div {
+  margin-top: 10px;
+}
+.producto-cotizador input {
+  height: 40px;
+}
 
 .navbar {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95));
