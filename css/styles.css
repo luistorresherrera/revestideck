@@ -159,9 +159,10 @@ section {
 }
 
 .section-diseno {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/background/diseno.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background/diseno.webp");
   background-position: center;
   height: 75vh;
+  overflow: hidden;
   background-attachment: fixed;
   background-size: cover;
   color: #ffffff !important;
@@ -173,21 +174,54 @@ section {
   width: 100%;
 }
 
-.btnDiseno {
-  font-size: 18px;
-  color: #0485a7;
-  text-decoration: none;
-  padding: 10px;
-  background-color: #0485a7;
-  border-radius: 5px;
-  color: #ffffff;
-  font-family: "Ubuntu", sans-serif;
-  border: 2px #0485a7 solid !important;
-  cursor: pointer;
+.ingeniero {
+  position: relative;
+  top: -324px;
+  right: -600px;
+  width: 100%;
+  text-align: end;
 }
-.btnDiseno:hover {
-  background-color: #005168;
-  color: #ffffff;
+
+.section-final {
+  height: auto;
+  padding: 3%;
+}
+.section-final img {
+  height: 100px;
+  width: auto;
+}
+.section-final h4 {
+  margin-top: 20px !important;
+  text-align: center !important;
+}
+
+.caracteristicas {
+  padding-top: 3%;
+  padding-bottom: 6%;
+}
+
+.sello-calidad {
+  text-align: center;
+  height: 0px !important;
+}
+.sello-calidad img {
+  height: 250px;
+  width: auto;
+  position: relative;
+  top: -90px;
+}
+
+footer {
+  background-color: #0485a7;
+  height: auto;
+  padding: 2%;
+  color: #ffffff !important;
+}
+footer img {
+  height: 120px;
+}
+footer h4 {
+  text-decoration: underline;
 }
 
 .logo-index {
@@ -310,6 +344,33 @@ section {
 
 .marronclaro {
   fill: #e7cd94;
+}
+
+.formulario {
+  background-color: rgba(255, 255, 255, 0.195);
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+}
+.formulario p {
+  margin: 0px !important;
+}
+
+.btnDiseno {
+  font-size: 18px;
+  color: #0485a7;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #0485a7;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  border: 2px #0485a7 solid !important;
+  cursor: pointer;
+}
+.btnDiseno:hover {
+  background-color: #005168;
+  color: #ffffff;
 }
 
 .boton-index-a {

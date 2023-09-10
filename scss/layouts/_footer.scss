@@ -1,0 +1,23 @@
+.sello-calidad {
+  text-align: center;
+  height: 0px !important;
+  & img {
+    height: 250px;
+    width: auto;
+    position: relative;
+    top: -90px;
+  }
+}
+
+footer {
+  background-color: $blue_color;
+  height: auto;
+  padding: 2%;
+  color: $white_color !important;
+  & img {
+    height: 120px;
+  }
+  & h4 {
+    text-decoration: underline;
+  }
+}

@@ -91,10 +91,11 @@ section {
 }
 
 .section-diseno {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/background/diseno.webp");
   background-position: center;
   height: 75vh;
+  overflow: hidden;
   background-attachment: fixed;
   background-size: cover;
   color: $white_color !important;
@@ -106,17 +107,29 @@ section {
   }
 }
 
-.btnDiseno {
-  @include navlinksitems();
-  padding: 10px;
-  background-color: $blue_color;
-  border-radius: 5px;
-  color: $white_color;
-  @include ubuntu();
-  border: 2px $blue_color solid !important;
-  cursor: pointer;
-  &:hover {
-    background-color: $blue_dark_color;
-    color: $white_color;
+.ingeniero {
+  position: relative;
+  top: -324px;
+
+  right: -600px;
+  width: 100%;
+  text-align: end;
+}
+
+.section-final {
+  height: auto;
+  padding: 3%;
+  & img {
+    height: 100px;
+    width: auto;
   }
+  & h4 {
+    margin-top: 20px !important;
+    text-align: center !important;
+  }
+}
+
+.caracteristicas {
+  padding-top: 3%;
+  padding-bottom: 6%;
 }
