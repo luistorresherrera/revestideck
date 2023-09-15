@@ -29,7 +29,7 @@
           />
           <div lass="nav-logoDiv d-flex flex-column justify-content-around">
             <div>
-              <a class="navbar-brand" href="#"
+              <a class="navbar-brand" href="../../index.html"
                 ><img
                   class="logo-nombreNav"
                   src="../../images/corp/nombre-revestideck.svg"
@@ -57,7 +57,12 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../../index.html"
+                >Inicio</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#productos">Productos</a>
@@ -82,50 +87,180 @@
     </header>
 
     <main>
+      <div class="hero-portada hero-portada-deck justify-content-around"></div>
       <!-- HERO PRODUCTO -->
       <div class="hero-producto row justify-content-around">
         <div
-          class="col-12 col-lg-8 d-flex flex-column justify-content-end"
-          style="background-color: red"
+          class="col-12 col-lg-8 d-flex flex-column justify-content-start mb-5"
         >
-          <div class="producto-picture w-100" style="background-color: green">
-            1
-          </div>
-          <div class="producto-colores w-100" style="background-color: yellow">
-            2
+          <div class="producto-descripcion w-100 text-start">
+            <h2 id="nombreProducto"></h2>
+            <div class="row d-flex">
+              <div
+                class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 producto-picture"
+              >
+                <img id="imagenProducto" alt="" />
+              </div>
+              <div
+                class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+              >
+                <p>
+                  <strong>Código de producto: </strong
+                  ><span id="codigoProducto">1</span>
+                </p>
+                <p>
+                  <strong>Categoria:</strong>
+                  <span id="categoriaProducto"></span>
+                </p>
+                <p>
+                  <strong>Valor de la tabla: </strong
+                  ><span id="valorTablaProducto"></span>
+                </p>
+                <p>
+                  <strong>Valor por metro cuadrado (m2): </strong
+                  ><span id="valorM2Producto"></span>
+                </p>
+                <p>
+                  <strong>Dimensiones: </strong>
+                  <span id="dimensionesProducto"></span>
+                </p>
+                <p>
+                  <strong>Descripción del producto: </strong
+                  ><span id="descripcionProducto"></span>
+                </p>
+                <p>
+                  <strong>Material: </strong>
+                  <span id="materialProducto"></span>
+                </p>
+                <p>
+                  <strong>Ambientes:</strong>
+                  <span id="ambientesProducto"></span>
+                </p>
+                <p><strong>Colores:</strong> <span></span></p>
+                <div class="row d-flex flex-row" id="coloresProducto">
+                  <!-- <div class="col producto-color-div">
+                    <div class="producto-color">
+                      <img
+                        src="../../images/productos/paginas/deck-wpc/marron.jpeg"
+                      />
+                    </div>
+                    <p>Café oscuro</p>
+                  </div>
+                  <div class="col producto-color-div">
+                    <div class="producto-color">
+                      <img
+                        src="../../images/productos/paginas/deck-wpc/marron.jpeg"
+                      />
+                    </div>
+                    <p>Café caoba</p>
+                  </div>
+                  <div class="col producto-color-div">
+                    <div class="producto-color">
+                      <img
+                        src="../../images/productos/paginas/deck-wpc/marron.jpeg"
+                      />
+                    </div>
+                    <p>Gris</p>
+                  </div>
+                  <div class="col producto-color-div">
+                    <div class="producto-color">
+                      <img
+                        src="../../images/productos/paginas/deck-wpc/marron.jpeg"
+                      />
+                    </div>
+                    <p>Gris claro</p>
+                  </div> -->
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div
-          class="col-12 col-lg-4 d-flex align-items-end justify-content-center"
+          class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex justify-content-center"
         >
           <div
             class="producto-cotizador align-items-start justify-content-start"
           >
             <h2>Cotiza ahora</h2>
-            <p>
-              Coloca las cantidades que necesitas del producto y tus datos de
-              contacto:
-            </p>
+
             <form>
-              <div><lable>Código de producto:</lable></div>
-              <div><input type="text" disabled="true" class="w-100" /></div>
-              <div><lable>Nombre de producto:</lable></div>
-              <div><input type="text" disabled="true" class="w-100" /></div>
-              <div>Selecciona la forma en la que deseas cotizar:</div>
+              <!-- <div><lable>Nombre completo:</lable></div>
+              <div><input type="text" class="form-control w-100" /></div>
+              <div><lable>Celular:</lable></div>
+              <div><input type="tel" class="form-control w-100" /></div>
+              <div><lable>Correo electrónico:</lable></div>
               <div>
-                <select id="selectTipoCotizacion" class="form-select">
-                  <option>Por metro cuadrado (m2)</option>
-                  <option>Por tabla</option>
+                <input type="email" class="form-control w-100" />
+              </div> -->
+
+              <div><lable>Nombre de producto:</lable></div>
+              <div>
+                <input
+                  type="text"
+                  disabled="true"
+                  class="w-100 form-control"
+                  id="inputNombreProducto"
+                />
+              </div>
+              <div>Color del producto:</div>
+              <div>
+                <select
+                  id="selectColorCotizacion"
+                  class="form-select form-select-lg"
+                  aria-label="Large select example"
+                >
+                  <!-- <option selected value="0">Café oscuro</option>
+                  <option value="1">Café caoba</option>
+                  <option value="2">Gris</option>
+                  <option value="3">Gris claro</option> -->
                 </select>
               </div>
+
+              <div>Selecciona la forma en la que deseas cotizar:</div>
+              <div>
+                <select
+                  id="selectTipoCotizacion"
+                  class="form-select form-select-lg"
+                  aria-label="Large select example"
+                >
+                  <option selected value="0">Por metro cuadrado (m2)</option>
+                  <option value="1">Por tabla</option>
+                </select>
+                <div>
+                  <lable>Indica la cantidad de metros cuadrados (m2):</lable>
+                </div>
+                <div class="d-flex cantidadProducto text-center id">
+                  <a id="menosCantidadCotizador">-</a>
+                  <input
+                    type="text"
+                    disabled="true"
+                    value="1"
+                    id="CantidadCotizador"
+                  />
+                  <a id="masCantidadCotizador">+</a>
+                </div>
+              </div>
+              <hr />
             </form>
-            <div class="w-100 btnDiseno text-center">Enviar cotización</div>
+            <div class="text-center">
+              <lable>Precio total:</lable>
+            </div>
+            <div class="w-100">
+              <p class="text-center">
+                CLP
+                <span class="precio-cotizacion" id="precioFinal"></span>+ IVA
+              </p>
+            </div>
+
+            <div class="w-100 btnDiseno text-center">
+              Solicita tu cotización con <strong>DESCUENTO</strong>
+            </div>
           </div>
         </div>
       </div>
       <section>
         <div id="productos" class="row col-12 text-center">
-          <h3>Productos TOP</h3>
+          <h3>Otros productos que te pueden interesar</h3>
         </div>
 
         <div class="row d-flex justify-content-around">
@@ -849,7 +984,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script src="./scripts/typed.js"></script>
-    <script src="./scripts/main.js"></script>
+    <script type="module" src="../../scripts/deck_wpc.js"></script>
   </body>
 </html>

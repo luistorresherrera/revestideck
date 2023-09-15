@@ -10,6 +10,21 @@
   font-family: "Ubuntu", sans-serif;
 }
 
+.hero-portada {
+  height: 50vh;
+  width: 100%;
+  overflow: hidden;
+}
+.hero-portada-deck {
+  background-image: url("../../images/portadas/deck-wpc.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.hero-portada img {
+  object-fit: cover;
+  width: 100%;
+}
 .hero-full {
   z-index: 1;
   width: 100%;
@@ -27,19 +42,63 @@
   margin-top: 30px;
 }
 .hero-producto {
-  height: 100vh;
+  position: relative;
+  top: -200px !important;
+  margin-top: 30px !important;
 }
 
+.producto-descripcion {
+  box-shadow: 5px 5px 10px #9d9d9c;
+  height: auto;
+  border: 1px solid #9d9d9c;
+  background-color: #ffffff;
+  padding: 2%;
+  border-radius: 5px;
+}
+.producto-descripcion h2 {
+  font-weight: bolder !important;
+  color: #0485a7 !important;
+}
+.producto-color {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 100%;
+  display: flex;
+}
+.producto-color img {
+  width: 100%;
+  height: 100%;
+}
+.producto-color-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.producto-color-div p {
+  text-align: center !important;
+  font-size: 14px !important;
+  padding-top: 5px;
+}
 .producto-picture {
-  height: 60%;
+  width: 50%;
+  height: auto;
+}
+.producto-picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 .producto-colores {
-  height: 20%;
+  height: 30%;
+  width: 100%;
+  height: 100%;
 }
 .producto-cotizador {
-  height: 80%;
+  box-shadow: 5px 5px 10px #9d9d9c;
+  height: auto;
   border: 1px solid #9d9d9c;
-  width: 80%;
+  width: 100%;
   background-color: #f4f4f4;
   padding: 5%;
   border-radius: 5px;
@@ -52,6 +111,27 @@
 }
 .producto-cotizador input {
   height: 40px;
+}
+
+.cantidadProducto a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 18px;
+  padding-left: 18px;
+  background-color: #0485a7;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  color: #ffffff !important;
+  font-size: 16px !important;
+  font-weight: bolder !important;
+}
+.cantidadProducto a:hover {
+  background-color: #005168;
+}
+.cantidadProducto input {
+  width: 60px;
+  text-align: center;
 }
 
 .navbar {
@@ -434,6 +514,14 @@ footer h4 {
   height: 50px;
 }
 
+#masCantidadCotizador {
+  cursor: pointer;
+}
+
+#menosCantidadCotizador {
+  cursor: pointer;
+}
+
 .card-productos-cotizacion {
   padding: 10px;
   border-radius: 5px;
@@ -515,6 +603,10 @@ h3 {
 h4 {
   font-size: 16px;
   font-family: "Ubuntu", sans-serif;
+}
+
+.precio-cotizacion {
+  font-size: 50px;
 }
 
 .accordion {

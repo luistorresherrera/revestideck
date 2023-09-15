@@ -1,6 +1,30 @@
 [
   {
     "id": "1",
+    "sku": "",
+    "url_imagen": "../../images/productos/paginas/deck-wpc.jpeg",
+    "categoria": "Revestimiento de piso y muro",
+    "descripcion": "Este es un producto que permite la ...",
+    "material": "WPC",
+    "ambientes": "Exteriores e interiores",
+    "colores": [
+      {
+        "color": "Café oscuro",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      },
+      {
+        "color": "Café caoba",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      },
+      {
+        "color": "Gris",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      },
+      {
+        "color": "Gris claro",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      }
+    ],
     "nombre": "Deck WPC",
     "precio_tabla": "11000",
     "precio_m2": "33000",
@@ -10,6 +34,7 @@
   },
   {
     "id": "2",
+    "sku": "",
     "nombre": "Cortavista WPC",
     "precio_tabla": "18000",
     "precio_m2": "18000",
@@ -19,6 +44,7 @@
   },
   {
     "id": "3",
+    "sku": "",
     "nombre": "Wall Panel WPC",
     "precio_tabla": "18000",
     "precio_m2": "18000",
@@ -28,6 +54,7 @@
   },
   {
     "id": "4",
+    "sku": "",
     "nombre": "Wall Panel",
     "precio_tabla": "18000",
     "precio_m2": "18000",
