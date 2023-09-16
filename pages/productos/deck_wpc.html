@@ -87,13 +87,18 @@
     </header>
 
     <main>
-      <div class="hero-portada hero-portada-deck justify-content-around"></div>
+      <div
+        class="hero-portada hero-portada-deck justify-content-around"
+        id="hero-portada-deck"
+      ></div>
       <!-- HERO PRODUCTO -->
       <div class="hero-producto row justify-content-around">
         <div
           class="col-12 col-lg-8 d-flex flex-column justify-content-start mb-5"
         >
-          <div class="producto-descripcion w-100 text-start">
+          <div
+            class="producto-descripcion w-100 text-center text-xs-center text-sm-center text-md-center text-lg-start text-xl-start"
+          >
             <h2 id="nombreProducto"></h2>
             <div class="row d-flex">
               <div
@@ -137,40 +142,7 @@
                   <span id="ambientesProducto"></span>
                 </p>
                 <p><strong>Colores:</strong> <span></span></p>
-                <div class="row d-flex flex-row" id="coloresProducto">
-                  <!-- <div class="col producto-color-div">
-                    <div class="producto-color">
-                      <img
-                        src="../../images/productos/paginas/deck-wpc/marron.jpeg"
-                      />
-                    </div>
-                    <p>Café oscuro</p>
-                  </div>
-                  <div class="col producto-color-div">
-                    <div class="producto-color">
-                      <img
-                        src="../../images/productos/paginas/deck-wpc/marron.jpeg"
-                      />
-                    </div>
-                    <p>Café caoba</p>
-                  </div>
-                  <div class="col producto-color-div">
-                    <div class="producto-color">
-                      <img
-                        src="../../images/productos/paginas/deck-wpc/marron.jpeg"
-                      />
-                    </div>
-                    <p>Gris</p>
-                  </div>
-                  <div class="col producto-color-div">
-                    <div class="producto-color">
-                      <img
-                        src="../../images/productos/paginas/deck-wpc/marron.jpeg"
-                      />
-                    </div>
-                    <p>Gris claro</p>
-                  </div> -->
-                </div>
+                <div class="row d-flex flex-row" id="coloresProducto"></div>
               </div>
             </div>
           </div>
@@ -208,12 +180,7 @@
                   id="selectColorCotizacion"
                   class="form-select form-select-lg"
                   aria-label="Large select example"
-                >
-                  <!-- <option selected value="0">Café oscuro</option>
-                  <option value="1">Café caoba</option>
-                  <option value="2">Gris</option>
-                  <option value="3">Gris claro</option> -->
-                </select>
+                ></select>
               </div>
 
               <div>Selecciona la forma en la que deseas cotizar:</div>
@@ -223,8 +190,8 @@
                   class="form-select form-select-lg"
                   aria-label="Large select example"
                 >
-                  <option selected value="0">Por metro cuadrado (m2)</option>
-                  <option value="1">Por tabla</option>
+                  <option selected value="0">Por tabla</option>
+                  <option value="1">Por metro cuadrado (m2)</option>
                 </select>
                 <div>
                   <lable>Indica la cantidad de metros cuadrados (m2):</lable>
@@ -233,9 +200,10 @@
                   <a id="menosCantidadCotizador">-</a>
                   <input
                     type="text"
-                    disabled="true"
                     value="1"
                     id="CantidadCotizador"
+                    class="form-control"
+                    maxlength="4"
                   />
                   <a id="masCantidadCotizador">+</a>
                 </div>

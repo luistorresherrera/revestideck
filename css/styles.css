@@ -16,7 +16,6 @@
   overflow: hidden;
 }
 .hero-portada-deck {
-  background-image: url("../../images/portadas/deck-wpc.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -80,14 +79,21 @@
   font-size: 14px !important;
   padding-top: 5px;
 }
-.producto-picture {
-  width: 50%;
-  height: auto;
+@media (min-width: 0px) {
+  .producto-picture {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  .producto-picture {
+    width: 50%;
+    height: auto;
+  }
 }
 .producto-picture img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
 }
 .producto-colores {
   height: 30%;

@@ -4,7 +4,6 @@
     width: 100%;
     overflow: hidden;
     &-deck {
-      background-image: url("../../images/portadas/deck-wpc.jpeg");
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -77,11 +76,15 @@
   }
 
   &-picture {
-    @include sizes(50%, auto);
+    @media (min-width: 0px) {
+      @include sizes(100%, auto);
+    }
+    @media (min-width: 992px) {
+      @include sizes(50%, auto);
+    }
 
     & img {
       @include sizes(100%, auto);
-      border-radius: 5px;
     }
   }
   &-colores {

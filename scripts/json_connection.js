@@ -19,6 +19,7 @@ export const traerDatosProducto = async (id_producto) => {
       productoSeleccionado.espesor_mm = element.espesor_mm;
       productoSeleccionado.ambientes = element.ambientes;
       productoSeleccionado.url_imagen = element.url_imagen;
+      productoSeleccionado.url_portada = element.url_portada;
 
       const arrayColores = [];
       const colores = element.colores;
