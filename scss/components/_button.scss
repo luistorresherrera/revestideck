@@ -29,3 +29,18 @@
 #menosCantidadCotizador {
   cursor: pointer;
 }
+.btn-primary {
+  background-color: $blue_color !important;
+  color: $white_color !important;
+  &:hover {
+    background-color: $blue_dark_color !important;
+  }
+}
+
+.btn-whatsapp {
+  background-color: #4bc359 !important;
+  color: $white_color !important;
+  &:hover {
+    background-color: #2c7a35 !important;
+  }
+}

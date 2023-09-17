@@ -1,7 +1,25 @@
-import { traerDatosProducto } from "./json_connection.js";
+import { returnFaqs } from "./common_pages/faqs.js";
+import { returnFooter } from "./common_pages/footer.js";
+import { returnOtrosProductos } from "./common_pages/otrosProductos.js";
+import { returnSello } from "./common_pages/sellocalidad.js";
+import { returnSpecsWPC } from "./common_pages/specs.js";
+import { returnVentajas } from "./common_pages/ventajas.js";
+import { returnNavegacion } from "./common_pages/navigation.js";
+import { traerDatosProducto, traerProducto } from "./json_connection.js";
 
 //trae el codigo del producto a buscar en base de datos
 const codProducto = document.getElementById("codigoProducto").innerText;
+
+//hacer el preload de las secciones comunes
+document.getElementById("footer").innerHTML = returnFooter();
+document.getElementById("specsWPC").innerHTML = returnSpecsWPC();
+document.getElementById("faqs").innerHTML = returnFaqs();
+document.getElementById("ventajas").innerHTML = returnVentajas();
+document.getElementById("selloCalidad").innerHTML = returnSello();
+document.getElementById("navegacion").innerHTML = returnNavegacion();
+document.getElementById("seccionProductos").innerHTML = returnOtrosProductos(
+  Number(codProducto)
+);
 
 // asigna el resultado del objeto encontrado en la base de datos basado en le código del producto
 const producto = await traerDatosProducto(codProducto);
@@ -77,7 +95,7 @@ btnMasCantidad.addEventListener("click", () => {
 });
 // reduce la cantidad de productos
 btnMenosCantidad.addEventListener("click", () => {
-  if (inputCantidad.value > 0) {
+  if (inputCantidad.value > 1) {
     inputCantidad.value = --inputCantidad.value;
     recalcularPrecio();
   }
@@ -102,7 +120,7 @@ document
 let valorAnterior = document.getElementById("CantidadCotizador").value;
 document.getElementById("CantidadCotizador").addEventListener("input", () => {
   // Obtiene el valor actual del campo de entrada
-  var valor = document.getElementById("CantidadCotizador").value;
+  let valor = document.getElementById("CantidadCotizador").value;
 
   // Reemplaza todo lo que no sea dígito con una cadena vacía
   valor = valor.replace(/\D/g, "");
@@ -116,15 +134,24 @@ document.getElementById("CantidadCotizador").addEventListener("input", () => {
 });
 
 // función de recálculo del precio
-const selectTipoCotizacion = document.getElementById("selectTipoCotizacion");
+
 function recalcularPrecio() {
   let cantidad = 0;
   let precio = 0;
+  let equivalencia = "";
 
   if (Number(document.getElementById("selectTipoCotizacion").value) == 1) {
     precio = Number(inputCantidad.value) * producto.precio_m2;
+    equivalencia = `(Equivale a ${Math.ceil(
+      Number(inputCantidad.value) /
+        ((Number(producto.largo_cm) / 100) * (Number(producto.ancho_cm) / 100))
+    )} tablas)`;
   } else {
     precio = Number(inputCantidad.value) * producto.precio_tabla;
+    equivalencia = `(Equivale a ${(
+      Number(inputCantidad.value) *
+      ((Number(producto.largo_cm) / 100) * (Number(producto.ancho_cm) / 100))
+    ).toFixed(2)} m2)`;
   }
 
   let tiempo = setInterval(() => {
@@ -135,6 +162,8 @@ function recalcularPrecio() {
       clearInterval(tiempo);
     }
   }, 20);
+
+  document.getElementById("equivalencia").innerHTML = equivalencia;
 }
 
 //pintar garantía, instalacion e información adicional
@@ -142,3 +171,140 @@ function recalcularPrecio() {
 document.getElementById("garantia").innerHTML = producto.garantia;
 document.getElementById("info_adicional").innerHTML = producto.info_adicional;
 document.getElementById("instalacion").innerHTML = producto.instalacion;
+
+//Pintar modal de cotización inmediata con productos
+const listaProductos = await traerProducto();
+let mensajeModalCotizacion = `<div class="modal-dialog">
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title">
+      Selecciona el producto que deseas cotizar:
+    </h5>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="modal"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="modal-body">`;
+listaProductos.forEach((element) => {
+  mensajeModalCotizacion =
+    mensajeModalCotizacion +
+    `<a href="./pages/productos/${element.html_name}.html"
+    <div class="d-flex flex-row card-productos-cotizacion">
+  <div class="image-cotizacion">
+    <img src="${element.url_imagen}" />
+  </div>
+  <div class="row d-flex flex-column">
+    <div><h4>${element.nombre}</h4></div>
+    <div>
+      <p>
+      ${element.descripcion_corta}
+      </p>
+    </div>
+  
+</div></a>`;
+});
+mensajeModalCotizacion =
+  mensajeModalCotizacion +
+  `</div>
+<div class="modal-footer">
+  <button
+    type="button"
+    class="btn btn-secondary"
+    data-bs-dismiss="modal"
+  >
+    Cerrar
+  </button>
+</div>
+</div>
+</div>`;
+
+document.getElementById("exampleModal").innerHTML = mensajeModalCotizacion;
+
+//pegar todos los datos en el modal de presupuesto
+document.getElementById("btnPresupuesto").addEventListener("click", () => {
+  document.getElementById("productoPresupuesto").innerHTML =
+    document.getElementById("inputNombreProducto").value;
+  document.getElementById("colorPresupuesto").innerHTML =
+    document.getElementById("selectColorCotizacion").options[
+      document.getElementById("selectColorCotizacion").selectedIndex
+    ].text;
+  document.getElementById("cantidadPresupuesto").innerHTML =
+    document.getElementById("CantidadCotizador").value;
+  document.getElementById("precioPresupuesto").innerHTML = `CLP ${
+    document.getElementById("precioFinal").innerHTML
+  } + IVA`;
+
+  document.getElementById("nombrePresupuesto").value =
+    localStorage.getItem("nombre_completo");
+  document.getElementById("celularPresupuesto").value =
+    localStorage.getItem("celular");
+  document.getElementById("correoPresupuesto").value =
+    localStorage.getItem("email");
+});
+
+//validar los datos cuando el cliente completa el formulario de modale de prupuesto
+document
+  .getElementById("btnSolicitarDescuento")
+  .addEventListener("click", () => {
+    let validar = true;
+    document
+      .getElementById("nombrePresupuesto")
+      .removeAttribute("style", "border: 2px solid red;");
+    document
+      .getElementById("celularPresupuesto")
+      .removeAttribute("style", "border: 2px solid red;");
+    document
+      .getElementById("correoPresupuesto")
+      .removeAttribute("style", "border: 2px solid red;");
+
+    if (!document.getElementById("nombrePresupuesto").value) {
+      document
+        .getElementById("nombrePresupuesto")
+        .setAttribute("style", "border: 2px solid red;");
+      validar = false;
+    }
+    if (!document.getElementById("celularPresupuesto").value) {
+      document
+        .getElementById("celularPresupuesto")
+        .setAttribute("style", "border: 2px solid red;");
+      validar = false;
+    }
+    if (!document.getElementById("correoPresupuesto").value) {
+      document
+        .getElementById("correoPresupuesto")
+        .setAttribute("style", "border: 2px solid red;");
+      validar = false;
+    }
+    if (!document.getElementById("correoPresupuesto").value.includes("@")) {
+      document
+        .getElementById("correoPresupuesto")
+        .setAttribute("style", "border: 2px solid red;");
+      validar = false;
+    }
+
+    //poner datos de usuario en locas storage
+    if (validar) {
+      localStorage.setItem(
+        "nombre_completo",
+        document.getElementById("nombrePresupuesto").value
+      );
+      localStorage.setItem(
+        "celular",
+        document.getElementById("celularPresupuesto").value
+      );
+      localStorage.setItem(
+        "email",
+        document.getElementById("correoPresupuesto").value
+      );
+    }
+  });
+
+//validar que el número de celular sean solo numeros
+document.getElementById("celularPresupuesto").addEventListener("input", () => {
+  let celular = document.getElementById("celularPresupuesto").value;
+  celular = celular.replace(/\D/g, "");
+  document.getElementById("celularPresupuesto").value = celular;
+});

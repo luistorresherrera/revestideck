@@ -23,6 +23,7 @@ export const traerDatosProducto = async (id_producto) => {
       productoSeleccionado.garantia = element.garantia;
       productoSeleccionado.info_adicional = element.info_adicional;
       productoSeleccionado.instalacion = element.instalacion;
+      productoSeleccionado.descripcion_corta = element.descripcion_corta;
 
       const arrayColores = [];
       const colores = element.colores;
@@ -35,4 +36,15 @@ export const traerDatosProducto = async (id_producto) => {
   });
 
   return productoSeleccionado;
+};
+
+export const traerProducto = async () => {
+  const arrayProducto = [];
+  const response = await fetch("../../json/productos.json");
+  const data = await response.json();
+
+  data.forEach((element) => {
+    arrayProducto.push(element);
+  });
+  return arrayProducto;
 };

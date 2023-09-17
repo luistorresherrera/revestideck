@@ -2,10 +2,12 @@
   {
     "id": "1",
     "sku": "",
+    "html_name": "deck_wpc",
     "url_portada": "../../images/portadas/deck-wpc.jpeg",
     "url_imagen": "../../images/productos/paginas/deck-wpc.jpeg",
     "categoria": "Revestimiento de piso y muro",
     "descripcion": "Este es un producto que permite la ...",
+    "descripcion_corta": "Material ideal para que puedas...",
     "material": "WPC",
     "ambientes": "Exteriores e interiores",
     "colores": [
@@ -29,8 +31,8 @@
     "nombre": "Deck WPC",
     "precio_tabla": "11000",
     "precio_m2": "33000",
-    "largo_cm": "2200",
-    "ancho_cm": "150",
+    "largo_cm": "220",
+    "ancho_cm": "15",
     "espesor_mm": "25",
     "garantia": "En caso tenga algun producto con imperfección o ... 6 meses desde la venta.",
     "info_adicional": "Este es un producto que no requiere mantenimiento constante debido a que ...",
@@ -39,40 +41,157 @@
   {
     "id": "2",
     "sku": "",
+    "url_portada": "../../images/portadas/deck-wpc.jpeg",
+    "url_imagen": "../../images/productos/paginas/deck-wpc.jpeg",
+    "html_name": "cortavista_wpc",
+    "categoria": "Revestimiento de piso y muro",
+    "descripcion": "Este es un producto que permite la ...",
+    "descripcion_corta": "Sirve para la separación de ambientes...",
+    "material": "WPC",
+    "ambientes": "Exteriores e interiores",
+    "colores": [
+      {
+        "color": "Café oscuro",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      },
+      {
+        "color": "Café caoba",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      },
+      {
+        "color": "Gris",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      },
+      {
+        "color": "Gris claro",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      }
+    ],
     "nombre": "Cortavista WPC",
     "precio_tabla": "18000",
     "precio_m2": "18000",
-    "largo_cm": "2200",
-    "ancho_cm": "70",
-    "espesor_mm": "25"
+    "largo_cm": "220",
+    "ancho_cm": "7",
+    "espesor_mm": "25",
+    "garantia": "En caso tenga algun producto con imperfección o ... 6 meses desde la venta.",
+    "info_adicional": "Este es un producto que no requiere mantenimiento constante debido a que ...",
+    "instalacion": "La instalación de este producto es muy sencillas, las uniones son internas..."
   },
   {
     "id": "3",
     "sku": "",
+    "url_portada": "../../images/portadas/deck-wpc.jpeg",
+    "url_imagen": "../../images/productos/paginas/deck-wpc.jpeg",
+    "html_name": "wall_panel_wpc",
+    "categoria": "Revestimiento de piso y muro",
+    "descripcion": "Este es un producto que permite la ...",
+    "descripcion_corta": "Ideal para exteriores e interiores para revestimiento...",
+    "material": "WPC",
+    "ambientes": "Exteriores e interiores",
+    "colores": [
+      {
+        "color": "Café oscuro",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      },
+      {
+        "color": "Café caoba",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      },
+      {
+        "color": "Gris",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      },
+      {
+        "color": "Gris claro",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      }
+    ],
     "nombre": "Wall Panel WPC",
     "precio_tabla": "18000",
     "precio_m2": "18000",
-    "largo_cm": "2800",
-    "ancho_cm": "128",
-    "espesor_mm": "25"
+    "largo_cm": "280",
+    "ancho_cm": "12",
+    "espesor_mm": "25",
+    "garantia": "En caso tenga algun producto con imperfección o ... 6 meses desde la venta.",
+    "info_adicional": "Este es un producto que no requiere mantenimiento constante debido a que ...",
+    "instalacion": "La instalación de este producto es muy sencillas, las uniones son internas..."
   },
   {
     "id": "4",
     "sku": "",
+    "url_portada": "../../images/portadas/deck-wpc.jpeg",
+    "url_imagen": "../../images/productos/paginas/deck-wpc.jpeg",
+    "html_name": "wall_panel",
+    "categoria": "Revestimiento de piso y muro",
+    "descripcion": "Este es un producto que permite la ...",
+    "descripcion_corta": "Excelente para interiores con elegancia...",
+    "material": "no es WPC",
+    "ambientes": "Interiores",
+    "colores": [
+      {
+        "color": "Café oscuro",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      },
+      {
+        "color": "Café caoba",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      },
+      {
+        "color": "Gris",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      },
+      {
+        "color": "Gris claro",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      }
+    ],
     "nombre": "Wall Panel",
     "precio_tabla": "18000",
     "precio_m2": "18000",
-    "largo_cm": "2800",
-    "ancho_cm": "121",
-    "espesor_mm": "12"
+    "largo_cm": "280",
+    "ancho_cm": "12",
+    "espesor_mm": "12",
+    "garantia": "En caso tenga algun producto con imperfección o ... 6 meses desde la venta.",
+    "info_adicional": "Este es un producto que no requiere mantenimiento constante debido a que ...",
+    "instalacion": "La instalación de este producto es muy sencillas, las uniones son internas..."
   },
   {
     "id": "5",
+    "sku": "",
+    "url_portada": "../../images/portadas/deck-wpc.jpeg",
+    "url_imagen": "../../images/productos/paginas/deck-wpc.jpeg",
+    "html_name": "siding_wpc",
+    "categoria": "Revestimiento de piso y muro",
+    "descripcion": "Este es un producto que permite la ...",
+    "descripcion_corta": "Excelente para exteriores como...",
+    "material": "WPC",
+    "ambientes": "Exteriores",
+    "colores": [
+      {
+        "color": "Café oscuro",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      },
+      {
+        "color": "Café caoba",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      },
+      {
+        "color": "Gris",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      },
+      {
+        "color": "Gris claro",
+        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+      }
+    ],
     "nombre": "Siding WPC",
     "precio_tabla": "18000",
     "precio_m2": "18000",
-    "largo_cm": "2200",
-    "ancho_cm": "157",
-    "espesor_mm": "21"
+    "largo_cm": "220",
+    "ancho_cm": "15.7",
+    "espesor_mm": "21",
+    "garantia": "En caso tenga algun producto con imperfección o ... 6 meses desde la venta.",
+    "info_adicional": "Este es un producto que no requiere mantenimiento constante debido a que ...",
+    "instalacion": "La instalación de este producto es muy sencillas, las uniones son internas..."
   }
 ]

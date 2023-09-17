@@ -8,11 +8,25 @@
     border: 2px solid $blue_color;
     background-color: $gray_light_color;
   }
+  & h4 {
+    text-decoration: none !important;
+  }
 }
 .image-cotizacion {
   & img {
     @include sizes(100px, 100px);
     object-fit: cover;
     border-radius: 5px;
+  }
+}
+.modal-body {
+  & a {
+    text-decoration: none !important;
+    color: $blue_color !important;
+  }
+  & p {
+    text-decoration: none !important;
+    color: $gray_color !important;
+    text-align: start;
   }
 }
