@@ -57,6 +57,9 @@
 .producto-descripcion h2 {
   font-weight: bolder !important;
   color: #0485a7 !important;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .producto-color {
   width: 80px;
@@ -138,6 +141,11 @@
 .cantidadProducto input {
   width: 60px;
   text-align: center;
+}
+
+#seccionInformacionAdicional {
+  margin-top: -200px;
+  margin-bottom: 50px;
 }
 
 .navbar {

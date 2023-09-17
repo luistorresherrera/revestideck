@@ -31,7 +31,10 @@
     "precio_m2": "33000",
     "largo_cm": "2200",
     "ancho_cm": "150",
-    "espesor_mm": "25"
+    "espesor_mm": "25",
+    "garantia": "En caso tenga algun producto con imperfección o ... 6 meses desde la venta.",
+    "info_adicional": "Este es un producto que no requiere mantenimiento constante debido a que ...",
+    "instalacion": "La instalación de este producto es muy sencillas, las uniones son internas..."
   },
   {
     "id": "2",

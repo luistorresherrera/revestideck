@@ -88,6 +88,13 @@ btnMenosCantidad.addEventListener("click", () => {
 document
   .getElementById("selectTipoCotizacion")
   .addEventListener("change", () => {
+    let precio = "";
+    if (document.getElementById("selectTipoCotizacion").value == 0) {
+      precio = "Indica la cantidad de tablas a cotizar:";
+    } else {
+      precio = "Indica la cantidad de metros cuadrados (m2) a cotizar:";
+    }
+    document.getElementById("mensajeCantidad").innerHTML = precio;
     recalcularPrecio();
   });
 
@@ -129,3 +136,9 @@ function recalcularPrecio() {
     }
   }, 20);
 }
+
+//pintar garantía, instalacion e información adicional
+
+document.getElementById("garantia").innerHTML = producto.garantia;
+document.getElementById("info_adicional").innerHTML = producto.info_adicional;
+document.getElementById("instalacion").innerHTML = producto.instalacion;
