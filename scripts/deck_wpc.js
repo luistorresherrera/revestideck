@@ -227,13 +227,37 @@ document.getElementById("exampleModal").innerHTML = mensajeModalCotizacion;
 document.getElementById("btnPresupuesto").addEventListener("click", () => {
   document.getElementById("productoPresupuesto").innerHTML =
     document.getElementById("inputNombreProducto").value;
+  document.getElementById("hiddenProducto").value = document.getElementById(
+    "inputNombreProducto"
+  ).value;
   document.getElementById("colorPresupuesto").innerHTML =
     document.getElementById("selectColorCotizacion").options[
       document.getElementById("selectColorCotizacion").selectedIndex
     ].text;
-  document.getElementById("cantidadPresupuesto").innerHTML =
-    document.getElementById("CantidadCotizador").value;
+  document.getElementById("hiddenColor").value = document.getElementById(
+    "selectColorCotizacion"
+  ).options[
+    document.getElementById("selectColorCotizacion").selectedIndex
+  ].text;
+  document.getElementById("tipoPresupuesto").innerHTML =
+    document.getElementById("selectTipoCotizacion").options[
+      document.getElementById("selectTipoCotizacion").selectedIndex
+    ].text;
+  document.getElementById("hiddenTipo").value = document.getElementById(
+    "selectTipoCotizacion"
+  ).options[document.getElementById("selectTipoCotizacion").selectedIndex].text;
+  document.getElementById("cantidadPresupuesto").innerHTML = `
+  ${document.getElementById("CantidadCotizador").value}    ${
+    document.getElementById("equivalencia").innerHTML
+  }`;
+  document.getElementById("hiddenCantidad").value = `
+    ${document.getElementById("CantidadCotizador").value}  -> ${
+    document.getElementById("equivalencia").innerHTML
+  }`;
   document.getElementById("precioPresupuesto").innerHTML = `CLP ${
+    document.getElementById("precioFinal").innerHTML
+  } + IVA`;
+  document.getElementById("hiddenPrecio").value = `CLP ${
     document.getElementById("precioFinal").innerHTML
   } + IVA`;
 
@@ -299,6 +323,9 @@ document
         "email",
         document.getElementById("correoPresupuesto").value
       );
+      document.getElementById("formPresupuesto").submit();
+      // location.reload();
+      // alert("hola");
     }
   });
 

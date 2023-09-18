@@ -214,70 +214,100 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div>
-              <lable>Producto: </lable
-              ><strong id="productoPresupuesto"></strong>
-            </div>
-            <div>
-              <lable>Color: </lable><strong id="colorPresupuesto"></strong>
-            </div>
-            <div>
-              <lable>Cantidad: </lable
-              ><strong id="cantidadPresupuesto"></strong>
-            </div>
-            <div>
-              <lable>Precio indicado: </lable
-              ><strong id="precioPresupuesto"></strong>
-            </div>
-            <hr />
-            <h5 class="modal-title mb-3">
-              Déjanos tus datos para contactarte:
-            </h5>
-            <p>
-              Tus datos solo serán utilizados parar brindarte el mejor precio
-              posible.
-            </p>
-            <div><lable>Nombre completo:</lable></div>
-            <div>
-              <input
-                type="text"
-                class="form-control w-100 mb-3"
-                id="nombrePresupuesto"
-              />
-            </div>
-            <div><lable>Celular:</lable></div>
-            <!-- <div>
-              <input type="tel" maxlength="9" class="form-control w-100" />
-            </div> -->
-            <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1">+56</span>
-              <input
-                type="tel"
-                class="form-control"
-                placeholder=""
-                aria-label="Celular"
-                aria-describedby="basic-addon1"
-                id="celularPresupuesto"
-                maxlength="9"
-              />
-            </div>
-            <div><lable>Correo electrónico:</lable></div>
-            <div>
-              <input
-                type="email"
-                class="form-control w-100"
-                id="correoPresupuesto"
-              />
-            </div>
+            <form
+              action="../../php/mail.php"
+              method="POST"
+              id="formPresupuesto"
+            >
+              <table>
+                <tr>
+                  <td class="w-50"><lable>Producto: </lable></td>
+                  <td>
+                    <strong name="Producto" id="productoPresupuesto"></strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td><lable>Color: </lable></td>
+                  <td><strong name="Color" id="colorPresupuesto"></strong></td>
+                </tr>
+                <tr>
+                  <td><lable>Cotización: </lable></td>
+                  <td>
+                    <strong id="cantidadPresupuesto" name="Cantidad"></strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td><lable>Cantidad: </lable></td>
+                  <td>
+                    <strong name="Cotizacion" id="tipoPresupuesto"></strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td><lable>Precio indicado: </lable></td>
+                  <td>
+                    <strong
+                      id="precioPresupuesto"
+                      name="Precio inicial"
+                    ></strong>
+                  </td>
+                </tr>
+              </table>
+              <hr />
+              <h5 class="modal-title mb-3">
+                Déjanos tus datos para contactarte:
+              </h5>
+              <p>
+                Tus datos solo serán utilizados parar brindarte el mejor precio
+                posible.
+              </p>
+              <div>
+                <input type="hidden" id="hiddenProducto" name="Producto" />
+                <input type="hidden" id="hiddenColor" name="Color" />
+                <input type="hidden" id="hiddenTipo" name="Tipo Cotización" />
+                <input type="hidden" id="hiddenCantidad" name="Cantidad" />
+                <input type="hidden" id="hiddenPrecio" name="Precio" />
+              </div>
+              <div><lable>Nombre completo:</lable></div>
+              <div>
+                <input
+                  type="text"
+                  class="form-control w-100 mb-3"
+                  id="nombrePresupuesto"
+                  name="nombre"
+                />
+              </div>
+              <div><lable>Celular:</lable></div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">+56</span>
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder=""
+                  aria-label="Celular"
+                  aria-describedby="basic-addon1"
+                  id="celularPresupuesto"
+                  maxlength="9"
+                  name="mensaje"
+                />
+              </div>
+              <div><lable>Correo electrónico:</lable></div>
+              <div>
+                <input
+                  type="email"
+                  class="form-control w-100"
+                  id="correoPresupuesto"
+                  name="email"
+                />
+                <input type="hidden" name="_subject" value="Nueva cotización" />
+                <!-- <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com"> -->
+                <!-- <input type="hidden" name="_next" value="#" /> -->
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+              </div>
+            </form>
           </div>
-          <form
-            action="https://formsubmit.co/luis.torres@tyzcorp.com"
-            method="POST"
-          >
-            <input type="text" name="name" required />
-            <input type="email" name="email" required />
-            <button type="submit">Send</button>
-          </form>
+
           <div class="modal-footer">
             <button
               type="button"
@@ -290,7 +320,7 @@
               Asesor por Whatsapp
             </button>
             <button
-              type="button"
+              type="submit"
               class="btn btn-primary"
               id="btnSolicitarDescuento"
             >
