@@ -19,10 +19,10 @@ const typed = new Typed(`.typed`, {
   contentType: `html`,
 });
 
-document.getElementById("specsWPC").innerHTML = returnSpecsWPC();
+document.getElementById("specsWPC").innerHTML = returnSpecsWPC(0);
 document.getElementById("faqs").innerHTML = returnFaqs();
-document.getElementById("ventajas").innerHTML = returnVentajas();
-document.getElementById("selloCalidad").innerHTML = returnSello();
+document.getElementById("ventajas").innerHTML = returnVentajas(0);
+document.getElementById("selloCalidad").innerHTML = returnSello(0);
 
 document.getElementById("btnDiseno").addEventListener("click", () => {
   document.getElementById("nombreDiseno").value =

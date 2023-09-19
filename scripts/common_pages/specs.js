@@ -1,4 +1,20 @@
-export function returnSpecsWPC() {
+export function returnSpecsWPC(codPage) {
+  let agua = "../../images/icons/specs/water-proof.svg";
+  let termitas = "../../images/icons/specs/termite-resistance.svg";
+  let clima = "../../images/icons/specs/weather-resistance.svg";
+  let sostenibilidad = "../../images/icons/specs/sustainability.svg";
+  let moho = "../../images/icons/specs/mold-resistance.svg";
+  let impactos = "../../images/icons/specs/crash-resistance.svg";
+
+  if (codPage == 0) {
+    agua = "./images/icons/specs/water-proof.svg";
+    termitas = "./images/icons/specs/termite-resistance.svg";
+    clima = "./images/icons/specs/weather-resistance.svg";
+    sostenibilidad = "./images/icons/specs/sustainability.svg";
+    moho = "./images/icons/specs/mold-resistance.svg";
+    impactos = "./images/icons/specs/crash-resistance.svg";
+  }
+
   let mensaje = `<div class="d-flex flex-row">
   <div class="d-flex flex-column col-12 text-center">
     <h3>¿Por qué utilizar productos de WPC?</h3>
@@ -19,7 +35,7 @@ export function returnSpecsWPC() {
       <div class="specs-item">
         <img
           class="specs-item-icon"
-          src="../../images/icons/specs/water-proof.svg"
+          src="${agua}"
         />
         <h4>Resistente al agua</h4>
       </div>
@@ -30,7 +46,7 @@ export function returnSpecsWPC() {
       <div class="specs-item">
         <img
           class="specs-item-icon"
-          src="../../images/icons/specs/termite-resistance.svg"
+          src="${termitas}"
         />
         <h4>Resistente a las termitas</h4>
       </div>
@@ -41,7 +57,7 @@ export function returnSpecsWPC() {
       <div class="specs-item">
         <img
           class="specs-item-icon"
-          src="../../images/icons/specs/weather-resistance.svg"
+          src="${clima}"
         />
         <h4>Resistente a climas extremos</h4>
       </div>
@@ -52,7 +68,7 @@ export function returnSpecsWPC() {
       <div class="specs-item">
         <img
           class="specs-item-icon"
-          src="../../images/icons/specs/sustainability.svg"
+          src="${sostenibilidad}"
         />
         <h4>Sostenible con el medio ambiente</h4>
       </div>
@@ -63,7 +79,7 @@ export function returnSpecsWPC() {
       <div class="specs-item">
         <img
           class="specs-item-icon"
-          src="../../images/icons/specs/mold-resistance.svg"
+          src="${moho}"
         />
         <h4>Resistente al moho y humedad</h4>
       </div>
@@ -74,7 +90,7 @@ export function returnSpecsWPC() {
       <div class="specs-item">
         <img
           class="specs-item-icon"
-          src="../../images/icons/specs/crash-resistance.svg"
+          src="${impactos}"
         />
         <h4>Resistente a los impactos</h4>
       </div>
@@ -109,5 +125,6 @@ export function returnSpecsWPC() {
     </div>
   </div>
 </div>`;
+
   return mensaje;
 }
