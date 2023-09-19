@@ -37,7 +37,7 @@ export function returnNavegacion() {
     <ul class="navbar-nav">
       <li class="nav-item">
         <a
-          class="nav-link active"
+          class="nav-link"
           aria-current="page"
           href="../../index.html"
           >Inicio</a
@@ -50,7 +50,7 @@ export function returnNavegacion() {
         <a class="nav-link" href="#diseno">Diseño e instalación</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="">Contáctanos</a>
+        <a class="nav-link" href="https://wa.me/51987494869/?text=Hola" target="_blank">Contáctanos</a>
       </li>
       <li class="nav-item">
         <a

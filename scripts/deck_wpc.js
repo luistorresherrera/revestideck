@@ -1,6 +1,6 @@
 import { returnFaqs } from "./common_pages/faqs.js";
 import { returnFooter } from "./common_pages/footer.js";
-import { returnOtrosProductos } from "./common_pages/otrosProductos.js";
+
 import { returnSello } from "./common_pages/sellocalidad.js";
 import { returnSpecsWPC } from "./common_pages/specs.js";
 import { returnVentajas } from "./common_pages/ventajas.js";
@@ -17,9 +17,6 @@ document.getElementById("faqs").innerHTML = returnFaqs();
 document.getElementById("ventajas").innerHTML = returnVentajas();
 document.getElementById("selloCalidad").innerHTML = returnSello();
 document.getElementById("navegacion").innerHTML = returnNavegacion();
-document.getElementById("seccionProductos").innerHTML = returnOtrosProductos(
-  Number(codProducto)
-);
 
 // asigna el resultado del objeto encontrado en la base de datos basado en le código del producto
 const producto = await traerDatosProducto(codProducto);
@@ -80,6 +77,13 @@ document
   .getElementById("inputNombreProducto")
   .setAttribute("value", `${producto.nombre} (Código: ${producto.sku})`);
 document.getElementById("selectColorCotizacion").innerHTML = selectColores;
+let tipo = "";
+if (document.getElementById("selectTipoCotizacion").value == 0) {
+  tipo = "Indica la cantidad de tablas a cotizar:";
+} else {
+  tipo = "Indica la cantidad de metros cuadrados (m2) a cotizar:";
+}
+document.getElementById("mensajeCantidad").innerHTML = tipo;
 
 const btnMasCantidad = document.getElementById("masCantidadCotizador");
 const btnMenosCantidad = document.getElementById("menosCantidadCotizador");
@@ -106,13 +110,13 @@ btnMenosCantidad.addEventListener("click", () => {
 document
   .getElementById("selectTipoCotizacion")
   .addEventListener("change", () => {
-    let precio = "";
+    let tipo = "";
     if (document.getElementById("selectTipoCotizacion").value == 0) {
-      precio = "Indica la cantidad de tablas a cotizar:";
+      tipo = "Indica la cantidad de tablas a cotizar:";
     } else {
-      precio = "Indica la cantidad de metros cuadrados (m2) a cotizar:";
+      tipo = "Indica la cantidad de metros cuadrados (m2) a cotizar:";
     }
-    document.getElementById("mensajeCantidad").innerHTML = precio;
+    document.getElementById("mensajeCantidad").innerHTML = tipo;
     recalcularPrecio();
   });
 
@@ -174,7 +178,8 @@ document.getElementById("instalacion").innerHTML = producto.instalacion;
 
 //Pintar modal de cotización inmediata con productos
 const listaProductos = await traerProducto();
-let mensajeModalCotizacion = `<div class="modal-dialog">
+
+let mensajeModalCotizacion = `<div class="modal-dialog modal-dialog-centered">
 <div class="modal-content">
   <div class="modal-header">
     <h5 class="modal-title">
@@ -272,7 +277,7 @@ document.getElementById("btnPresupuesto").addEventListener("click", () => {
 //validar los datos cuando el cliente completa el formulario de modale de prupuesto
 document
   .getElementById("btnSolicitarDescuento")
-  .addEventListener("click", () => {
+  .addEventListener("click", async () => {
     let validar = true;
     document
       .getElementById("nombrePresupuesto")
@@ -309,7 +314,7 @@ document
       validar = false;
     }
 
-    //poner datos de usuario en locas storage
+    //poner datos de usuario en local storage
     if (validar) {
       localStorage.setItem(
         "nombre_completo",
@@ -323,9 +328,14 @@ document
         "email",
         document.getElementById("correoPresupuesto").value
       );
+
       document.getElementById("formPresupuesto").submit();
-      // location.reload();
-      // alert("hola");
+      await Swal.fire(
+        "¡Solicitud Enviada!",
+        "En breve te contactaremos",
+        "success"
+      );
+      location.reload();
     }
   });
 
@@ -335,3 +345,144 @@ document.getElementById("celularPresupuesto").addEventListener("input", () => {
   celular = celular.replace(/\D/g, "");
   document.getElementById("celularPresupuesto").value = celular;
 });
+
+//pintar modal de diseño
+
+document.getElementById("btnDiseno").addEventListener("click", () => {
+  document.getElementById("nombreDiseno").value =
+    localStorage.getItem("nombre_completo");
+  document.getElementById("celularDiseno").value =
+    localStorage.getItem("celular");
+  document.getElementById("correoDiseno").value = localStorage.getItem("email");
+});
+
+// enviar modal disenño
+//validar los datos cuando el cliente completa el formulario de modal de diseno
+document
+  .getElementById("btnSolicitarDiseno")
+  .addEventListener("click", async () => {
+    let validar = true;
+    document
+      .getElementById("nombreDiseno")
+      .removeAttribute("style", "border: 2px solid red;");
+    document
+      .getElementById("celularDiseno")
+      .removeAttribute("style", "border: 2px solid red;");
+    document
+      .getElementById("correoDiseno")
+      .removeAttribute("style", "border: 2px solid red;");
+
+    if (!document.getElementById("nombreDiseno").value) {
+      document
+        .getElementById("nombreDiseno")
+        .setAttribute("style", "border: 2px solid red;");
+      validar = false;
+    }
+    if (!document.getElementById("celularDiseno").value) {
+      document
+        .getElementById("celularDiseno")
+        .setAttribute("style", "border: 2px solid red;");
+      validar = false;
+    }
+    if (!document.getElementById("correoDiseno").value) {
+      document
+        .getElementById("correoDiseno")
+        .setAttribute("style", "border: 2px solid red;");
+      validar = false;
+    }
+    if (!document.getElementById("correoDiseno").value.includes("@")) {
+      document
+        .getElementById("correoDiseno")
+        .setAttribute("style", "border: 2px solid red;");
+      validar = false;
+    }
+
+    //poner datos de usuario en local storage
+    if (validar) {
+      localStorage.setItem(
+        "nombre_completo",
+        document.getElementById("nombreDiseno").value
+      );
+      localStorage.setItem(
+        "celular",
+        document.getElementById("celularDiseno").value
+      );
+      localStorage.setItem(
+        "email",
+        document.getElementById("correoDiseno").value
+      );
+
+      document.getElementById("formDiseno").submit();
+
+      await Swal.fire(
+        "¡Solicitud Enviada!",
+        "En breve te contactaremos",
+        "success"
+      );
+      location.reload();
+    }
+  });
+
+//CARGAR OTROS PRODUCTOS
+
+const listaProductosPage = await traerProducto();
+let mensajeProductosPage = `<div id="productos" class="row col-12 text-center">
+      <h3>Otros productos que te pueden interesar</h3>
+    </div>
+    <div class="row d-flex justify-content-around">`;
+
+listaProductosPage.forEach((element) => {
+  let mensajeColorProductos = "";
+  if (codProducto != element.id) {
+    mensajeProductosPage =
+      mensajeProductosPage +
+      `<div class="col-11 col-sm-11 col-md-6 col-lg-5 col-xl-3">
+            <div class="card">
+            <div class="card-product-image">
+            <img src="${element.url_perfil_producto}" />
+            <div class="card-product-image-type text-end">
+            <span>${element.ambientes}</span>
+            </div>
+            </div>
+            <div class="card-body">
+            <h5 class="card-title">${element.nombre}</h5>
+            <p class="card-text">
+            ${element.descripcion_corta}
+            </p>
+            <div class="card-text d-flex flex-row">
+            <div><p>Colores:</p></div>
+            <div class="d-flex colors">`;
+
+    element.colores.forEach((elementColor) => {
+      mensajeColorProductos =
+        mensajeColorProductos +
+        `<div class="producto-color-chico">
+                    <img src="${elementColor.url}" />
+                    </div>`;
+    });
+    mensajeProductosPage = mensajeProductosPage + mensajeColorProductos;
+    mensajeProductosPage =
+      mensajeProductosPage +
+      `</div>
+              </div>
+    
+              <div class="card-product-detail-button align-self-end">
+              <a
+              href="./pages/productos/${element.html_name}.html"
+              class="btnMasDetalles"
+              >Más información</a
+              >
+              <a
+              href="./pages/productos/${element.html_name}.html"
+              class="btnCotizarProducto"
+                          >Cotizar</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>`;
+  }
+});
+mensajeProductosPage = mensajeProductosPage + `</div>`;
+
+document.getElementById("seccionProductos").innerHTML = mensajeProductosPage;

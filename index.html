@@ -11,12 +11,18 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="./images/corp/favicon.svg" />
   </head>
   <body>
+    <div class="whatsapp">
+      <a href="https://wa.me/51987494869/?text=Hola" target="_blank"
+        ><img src="./images/icons/whatsapp.png" alt="Whatsapp Revestideck"
+      /></a>
+    </div>
     <header>
       <!-- BARRA DE NAVEGACION -->
 
@@ -51,6 +57,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div
           class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
@@ -68,7 +75,12 @@
               <a class="nav-link" href="#diseno">Diseño e instalación</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Contáctanos</a>
+              <a
+                class="nav-link"
+                href="https://wa.me/51987494869/?text=Hola"
+                target="_blank"
+                >Contáctanos</a
+              >
             </li>
             <li class="nav-item">
               <a
@@ -147,291 +159,13 @@
 
         <img src="./images/icons/specs/arrow.svg" />
       </div>
-      <section>
-        <div id="productos" class="row col-12 text-center">
-          <h3>Productos TOP</h3>
-        </div>
+      <section id="productosX"></section>
 
-        <div class="row d-flex justify-content-around">
-          <div class="col-11 col-sm-11 col-md-4 col-lg-4 col-xl-4">
-            <div class="card">
-              <div class="card-product-image">
-                <img src="./images/productos/deck-wpc.jpeg" />
-                <div class="card-product-image-type text-end">
-                  <span>Exterior / Interior</span>
-                </div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Deck WPC</h5>
-                <p class="card-text">
-                  Ideal para piscinas, quinchos, casas de playa, terrazas e
-                  interiores elegantes.
-                </p>
-                <div class="card-text d-flex flex-row">
-                  <div><p>Colores:</p></div>
-                  <div class="d-flex colors">
-                    <svg class="cafeoscuro">
-                      <circle cx="15" cy="13" r="10" /></svg
-                    ><svg><circle cx="15" cy="13" r="10" class="gris" /></svg
-                    ><svg>
-                      <circle cx="15" cy="13" r="10" class="grisclaro" /></svg
-                    ><svg>
-                      <circle cx="15" cy="13" r="10" class="cafecaoba" />
-                    </svg>
-                  </div>
-                </div>
+      <section class="section-specs-detail" id="specsWPC"></section>
 
-                <div class="card-product-detail-button align-self-end">
-                  <a
-                    href="./pages/productos/deck_wpc.html"
-                    class="btnMasDetalles"
-                    >Más información</a
-                  >
-                  <a
-                    href="./pages/productos/deck_wpc.html"
-                    class="btnCotizarProducto"
-                    >Cotizar</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-11 col-sm-11 col-md-4 col-lg-4 col-xl-4">
-            <div class="card">
-              <div class="card-product-image">
-                <img src="./images/productos/cortavista-wpc.jpeg" />
-                <div class="card-product-image-type text-end">
-                  <span>Exterior / Interior</span>
-                </div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Cortavista WPC</h5>
-                <p class="card-text">
-                  Permite separar ambientes de una manera muy elegante,
-                  limitando la visión de un lado al otro.
-                </p>
-                <div class="card-text d-flex flex-row">
-                  <div><p>Colores:</p></div>
-                  <div class="d-flex colors">
-                    <svg class="cafeoscuro">
-                      <circle cx="15" cy="13" r="10" />
-                    </svg>
-                  </div>
-                </div>
-                <div class="card-product-detail-button align-self-end">
-                  <a href="" class="btnMasDetalles">Más información</a>
-                  <a href="" class="btnCotizarProducto">Cotizar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-11 col-sm-11 col-md-4 col-lg-4 col-xl-4">
-            <div class="card">
-              <div class="card-product-image">
-                <img src="./images/productos/wall-panel-wpc.jpeg" />
-                <div class="card-product-image-type text-end">
-                  <span>Exterior / Interior</span>
-                </div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Wall Panel WPC</h5>
-                <p class="card-text">
-                  Excelente para decorar distintos tipos de ambientes con un
-                  estilo elegante, moderno y de alta duración.
-                </p>
-                <div class="card-text d-flex flex-row">
-                  <div><p>Colores:</p></div>
-                  <div class="d-flex colors">
-                    <svg class="marronoscuro">
-                      <circle cx="15" cy="13" r="10" />
-                    </svg>
-                  </div>
-                </div>
-                <div class="card-product-detail-button align-self-end">
-                  <a href="" class="btnMasDetalles">Más información</a>
-                  <a href="" class="btnCotizarProducto">Cotizar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-11 col-sm-11 col-md-4 col-lg-4 col-xl-4">
-            <div class="card">
-              <div class="card-product-image">
-                <img src="./images/productos/wall-panel-interior.webp" />
-                <div class="card-product-image-type text-end">
-                  <span>Interior</span>
-                </div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Wall Panel</h5>
-                <p class="card-text">
-                  Excelente para decorar distintos tipos de ambientes con un
-                  estilo elegante y moderno.
-                </p>
-                <div class="card-text d-flex flex-row">
-                  <div><p>Colores:</p></div>
-                  <div class="d-flex colors">
-                    <svg class="negro"><circle cx="15" cy="13" r="10" /></svg
-                    ><svg><circle cx="15" cy="13" r="10" class="marron" /></svg>
-                  </div>
-                </div>
-                <div class="card-product-detail-button align-self-end">
-                  <a href="" class="btnMasDetalles">Más información</a>
-                  <a href="" class="btnCotizarProducto">Cotizar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-11 col-sm-11 col-md-4 col-lg-4 col-xl-4">
-            <div class="card">
-              <div class="card-product-image">
-                <img src="./images/productos/siding-wpc.jpeg" />
-                <div class="card-product-image-type text-end">
-                  <span>Exterior</span>
-                </div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Siding WPC</h5>
-                <p class="card-text">
-                  Revestimiento de WPC utilizado normalmente para fachadas para
-                  casas y edificios.
-                </p>
-                <div class="card-text d-flex flex-row">
-                  <div><p>Colores:</p></div>
-                  <div class="d-flex colors">
-                    <svg class="marronclaro">
-                      <circle cx="15" cy="13" r="10" /></svg
-                    ><svg>
-                      <circle cx="15" cy="13" r="10" class="grisclaro" /></svg
-                    ><svg><circle cx="15" cy="13" r="10" class="gris" /></svg
-                    ><svg><circle cx="15" cy="13" r="10" class="marron" /></svg
-                    ><svg><circle cx="15" cy="13" r="10" class="negro" /></svg>
-                  </div>
-                </div>
-                <div class="card-product-detail-button align-self-end">
-                  <a href="" class="btnMasDetalles">Más información</a>
-                  <a href="" class="btnCotizarProducto">Cotizar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-specs-detail">
-        <div class="d-flex flex-row">
-          <div class="d-flex flex-column col-12 text-center">
-            <h3>¿Por qué utilizar productos de WPC?</h3>
-            <p>&nbsp;</p>
-
-            <div class="d-flex flex-row justify-content-around"></div>
-          </div>
-        </div>
-
-        <div class="row d-flex flex-row justify-content-around text-center">
-          <div
-            class="row d-flex flex-row col-12 col-xs-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"
-          >
-            <div
-              class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 specs-container"
-              4
-            >
-              <div class="specs-item">
-                <img
-                  class="specs-item-icon"
-                  src="./images/icons/specs/water-proof.svg"
-                />
-                <h4>Resistente al agua</h4>
-              </div>
-            </div>
-            <div
-              class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 specs-container"
-            >
-              <div class="specs-item">
-                <img
-                  class="specs-item-icon"
-                  src="./images/icons/specs/termite-resistance.svg"
-                />
-                <h4>Resistente a las termitas</h4>
-              </div>
-            </div>
-            <div
-              class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 specs-container"
-            >
-              <div class="specs-item">
-                <img
-                  class="specs-item-icon"
-                  src="./images/icons/specs/weather-resistance.svg"
-                />
-                <h4>Resistente a climas extremos</h4>
-              </div>
-            </div>
-            <div
-              class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 specs-container"
-            >
-              <div class="specs-item">
-                <img
-                  class="specs-item-icon"
-                  src="./images/icons/specs/sustainability.svg"
-                />
-                <h4>Sostenible con el medio ambiente</h4>
-              </div>
-            </div>
-            <div
-              class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 specs-container"
-            >
-              <div class="specs-item">
-                <img
-                  class="specs-item-icon"
-                  src="./images/icons/specs/mold-resistance.svg"
-                />
-                <h4>Resistente al moho y humedad</h4>
-              </div>
-            </div>
-            <div
-              class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 specs-container"
-            >
-              <div class="specs-item">
-                <img
-                  class="specs-item-icon"
-                  src="./images/icons/specs/crash-resistance.svg"
-                />
-                <h4>Resistente a los impactos</h4>
-              </div>
-            </div>
-          </div>
-          <div
-            class="row col-12 col-xs-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"
-          >
-            <div class="text-start mt-5 mt-lg-0">
-              <h4>Gran durabilidad</h4>
-              <p>
-                Los pisos Deck WPC son extremadamente duraderos y resistentes a
-                los elementos, lo que los convierte en una opción ideal para
-                áreas expuestas al sol, la lluvia o la humedad. Tus pisos no se
-                deformarán, ni agrietarán, ni pudrirán con el paso del tiempo.
-              </p>
-              <h4>No requiere mantenimiento constante</h4>
-              <p>
-                Los pisos Deck WPC son extremadamente duraderos y resistentes a
-                los elementos, lo que los convierte en una opción ideal para
-                áreas expuestas al sol, la lluvia o la humedad. Tus pisos no se
-                deformarán, ni agrietarán, ni pudrirán con el paso del tiempo.
-              </p>
-              <h4>Resistencia al deslizamiento</h4>
-              <p>
-                La mayoría de los pisos Deck WPC cuentan con una superficie
-                antideslizante, lo que los convierte en una opción segura para
-                áreas húmedas, como alrededor de una piscina o un jacuzzi. Esto
-                ayuda a prevenir caídas y proporciona una mayor tranquilidad,
-                especialmente si tienes niños o adultos mayores en casa.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
       <section
         id="diseno"
-        class="d'flex section-diseno text-center align-middle"
+        class="section-diseno d-flex flex-column justify-content-center"
       >
         <div
           class="row d-flex flex-row justify-content-center justify-content-lg-end text-center"
@@ -443,281 +177,37 @@
             &nbsp;
             <p>
               Contamos con un equipo de diseñadores y especialistas que podrán
-              armar el proyecto que tu desees.
+              armar el proyecto que tus sueños.
             </p>
             &nbsp;
             <p>
               Hacemos la visita en el lugar que requieras para tomar las
-              dimensiones, llevarte muestras de los productos y armarte una
-              cotización presencialmente.
-            </p>
-            &nbsp;
-            <p>
-              Ingresa tus datos para poder contactarte y ayudarte en tu
-              proyecto.
+              medidas, darte ideas innovadoras, llevarte muestras de productos y
+              armarte una cotización presencialmente.
             </p>
             &nbsp;
 
-            <form>
-              <div class="mb-3">
-                <input
-                  type="text"
-                  id="TextInput"
-                  class="form-control"
-                  placeholder="Ingresa tu nombre completo"
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="tel"
-                  id="TextInput"
-                  class="form-control"
-                  placeholder="Ingresa tu celular"
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="mail"
-                  id="TextInput"
-                  class="form-control"
-                  placeholder="Ingresa tu correo electrónico"
-                />
-              </div>
-              <div class="d-flex justify-content-center">
-                <button type="submit" class="btnDiseno">Enviar datos</button>
-              </div>
-            </form>
+            <div class="d-flex justify-content-center">
+              <button
+                type="submit"
+                data-bs-toggle="modal"
+                data-bs-target="#modalDiseno"
+                class="btnDiseno w-100"
+                id="btnDiseno"
+              >
+                Envíanos tus datos
+              </button>
+            </div>
           </div>
         </div>
       </section>
       <section
         class="section-preguntas d-flex flex-column text-center justify-content-center"
-      >
-        <h3>Preguntas frecuentes de nuestros clientes</h3>
-        <div class="row justify-content-center">
-          <div class="col-10 text-start">
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    ¿Qué es WPC?
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse show"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    WPC, por sus siglas en inglés Wood Plastic Composite, es un
-                    material compuesto que combina fibras de madera y plástico.
-                    Los pisos Deck WPC están hechos de una mezcla de partículas
-                    de madera (60%), polímeros (35%) y aditivos (5%), logrando
-                    una apariencia auténtica de madera sin sus desventajas, como
-                    la necesidad de mantenimiento regular, la deformación o la
-                    susceptibilidad a los insectos y la putrefacción.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    ¿Cuál es la diferencia entre WPC y PVC?
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    El Deck WPC y el Deck PVC son dos de los tipos de piso
-                    preferidos a la hora de buscar un sustituto a la madera para
-                    pisos exteriores. Existen algunas diferencias que debes
-                    evaluar al momento de elegir entre ambos materiales:
-                    Mientras que los pisos “Deck de WPC (Wood Plastic
-                    Composite)” es un compuesto de madera reciclada, polímeros
-                    de plástico y aditivos, los pisos “Deck de PVC (Policloruro
-                    de Vinilo)” son 100% plásticos y están compuestos por una
-                    mezcla de resinas de PVC, estabilizadores y aditivos (no
-                    recicla la madera). Ambos materiales son duraderos y
-                    resistentes a los cambios de clima. Sin embargo, los pisos
-                    Deck de WPC tiene un aspecto semejante a la madera natural,
-                    otorgando una apariencia más cálida y atractiva. En cambio,
-                    los pisos Deck de PVC suelen tener una apariencia más
-                    uniforme y pueden no parecer tan auténticos como la madera.
-                    Finalmente, con pisos Deck de WPC puedes ahorrar hasta un
-                    30% en el costo de tu proyecto, frente al costo con pisos
-                    Deck de PVC. Si estás buscando una opción de piso duradera,
-                    resistente y estéticamente atractiva para tus espacios
-                    exteriores, los pisos Deck WPC son una excelente elección.
-                    Con su aspecto auténtico de madera, su baja necesidad de
-                    mantenimiento y su resistencia a los elementos, ofrecen una
-                    solución práctica y versátil para embellecer tu patio,
-                    terraza o área de piscina. Además, al ser respetuosos con el
-                    medio ambiente, puedes disfrutar de tu nuevo piso con la
-                    tranquilidad de estar tomando una decisión consciente. Así
-                    que considera los pisos Deck WPC como una opción destacada
-                    al planificar tu próximo proyecto de diseño al aire libre.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    ¿Por qué conviene usar WPC para la decoración?
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                    ¿Cómo puedo comprar los productos?
-                  </button>
-                </h2>
-                <div
-                  id="collapseFour"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
-                  >
-                    ¿Cómo se instalan estos productos?
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-final text-center">
-        <h3>Ventajas de Revestideck</h3>
-        <div class="caracteristicas row d-flex flex-row justify-content-around">
-          <div
-            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center"
-          >
-            <img src="./images/icons/tiempo-reducido-instalacion.svg" />
-            <h4>Reduce tiempos y costos de instalación</h4>
-          </div>
-          <div
-            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center"
-          >
-            <img src="./images/icons/ahorro-mantenimiento.svg" />
-            <h4>Minimiza el costo de mantenimiento</h4>
-          </div>
-          <div
-            class="col-6 col-xs- col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center"
-          >
-            <img src="./images/icons/stock.svg" />
-            <h4>Stock variado de productos</h4>
-          </div>
-          <div
-            class="col-6 col-xs- col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center"
-          >
-            <img src="./images/icons/distribucion.svg" />
-            <h4>Distribución en todo Chile</h4>
-          </div>
-          <div
-            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center"
-          >
-            <img src="./images/icons/design.svg" />
-            <h4>Soporte en el diseño e instalación</h4>
-          </div>
-          <div
-            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center"
-          >
-            <img src="./images/icons/asesoria.svg" />
-            <h4>Asesoría personalizada</h4>
-          </div>
-        </div>
-      </section>
+        id="faqs"
+      ></section>
+      <section class="section-final text-center" id="ventajas"></section>
 
-      <div class="sello-calidad">
-        <img src="./images/icons/calidad.png" />
-      </div>
+      <div class="sello-calidad" id="selloCalidad"></div>
     </main>
     <footer>
       <div class="row d-flex flex-row mt-5">
@@ -733,10 +223,14 @@
             class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 footer-margin text-center text-lg-start"
           >
             <h4>Links</h4>
-            <div><a>Inicio</a></div>
-            <div><a>Productos</a></div>
-            <div><a>Diseño e instalación</a></div>
-            <div><a>Solicitar cotización inmediata</a></div>
+            <div><a href="./index.html" target="_self">Inicio</a></div>
+            <div><a href="./index.html#productos">Productos</a></div>
+            <div><a href="./index.html#diseno">Diseño e instalación</a></div>
+            <div>
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                >Solicitar cotización inmediata</a
+              >
+            </div>
           </div>
         </div>
         <div
@@ -746,11 +240,31 @@
             class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 mt-3 text-center text-lg-start"
           >
             <h4>Productos</h4>
-            <div><a>Deck WPC</a></div>
-            <div><a>Cortavista WPC</a></div>
-            <div><a>Wall Panel WPC</a></div>
-            <div><a>Wall Panel</a></div>
-            <div><a>Siding WPC</a></div>
+            <div>
+              <a href="./pages/productos/deck_wpc.html" target="_self"
+                >Deck WPC</a
+              >
+            </div>
+            <div>
+              <a href="./pages/productos/cortavista_wpc.html" target="_self"
+                >Cortavista WPC</a
+              >
+            </div>
+            <div>
+              <a href="./pages/productos/wall_panel_wpc.html" target="_self"
+                >Wall Panel WPC</a
+              >
+            </div>
+            <div>
+              <a href="./pages/productos/wall_panel.html" target="_self"
+                >Wall Panel</a
+              >
+            </div>
+            <div>
+              <a href="./pages/productos/siding_wpc.html" target="_self"
+                >Siding WPC</a
+              >
+            </div>
           </div>
           <div
             class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 mt-3 text-center text-lg-start"
@@ -761,9 +275,15 @@
         </div>
       </div>
     </footer>
+    <div class="w-100 d-flex disenada-por justify-content-center">
+      Desarrollado por &nbsp;
+      <span
+        ><a href="https://www.tyzcorp.com" target="_blank"> TYZ Corp.</a></span
+      >
+    </div>
     <!-- MODAL DE COTIZACION -->
-    <div class="modal" tabindex="-1" id="exampleModal">
-      <div class="modal-dialog">
+    <div class="modal fade" tabindex="-1" id="exampleModal">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title">
@@ -864,9 +384,105 @@
     </div>
     <!-- FIN DE MODAL DE COTIZACION -->
 
+    <!-- MODAL DE DISEÑO -->
+
+    <div class="modal fade" tabindex="-1" id="modalDiseno">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Déjanos tus datos para contactarte:</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form
+              action="https://formsubmit.co/luis.torres@tyzcorp.com"
+              method="POST"
+              id="formDiseno"
+            >
+              <div><lable>Nombre completo:</lable></div>
+              <div>
+                <input
+                  type="text"
+                  class="form-control w-100 mb-3"
+                  id="nombreDiseno"
+                  name="Nombre"
+                />
+              </div>
+              <div><lable>Celular:</lable></div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">+56</span>
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder=""
+                  aria-label="Celular"
+                  aria-describedby="basic-addon1"
+                  id="celularDiseno"
+                  maxlength="9"
+                  name="Celular"
+                />
+              </div>
+              <div><lable>Correo electrónico:</lable></div>
+              <div>
+                <input
+                  type="email"
+                  class="form-control w-100"
+                  id="correoDiseno"
+                  name="email"
+                />
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="[REVESTIDECK] Diseño e instalación"
+                />
+                <!-- <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com"> -->
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://luistorresherrera.github.io/revestideck/index.html"
+                />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-whatsapp">
+              Asesor por Whatsapp
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="btnSolicitarDiseno"
+            >
+              Enviar datos
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FIN DE MODAL DE DISEÑO -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
     <script
@@ -875,15 +491,12 @@
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="./scripts/typed.js"></script>
-    <script src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
   </body>
 </html>

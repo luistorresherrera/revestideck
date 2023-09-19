@@ -46,7 +46,7 @@
     height: auto;
     border: 1px solid $gray_color;
     background-color: $white_color;
-    padding: 2%;
+    padding: 1%;
     border-radius: 5px;
 
     & h2 {
@@ -62,6 +62,13 @@
     overflow: hidden;
     border-radius: 100%;
     display: flex;
+    &-chico {
+      @include sizes(25px, 25px);
+      overflow: hidden;
+      border-radius: 100%;
+      display: flex;
+      margin-left: 5px;
+    }
 
     & img {
       @include sizes(100%, 100%);

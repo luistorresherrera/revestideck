@@ -51,7 +51,7 @@
   height: auto;
   border: 1px solid #9d9d9c;
   background-color: #ffffff;
-  padding: 2%;
+  padding: 1%;
   border-radius: 5px;
 }
 .producto-descripcion h2 {
@@ -67,6 +67,14 @@
   overflow: hidden;
   border-radius: 100%;
   display: flex;
+}
+.producto-color-chico {
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  border-radius: 100%;
+  display: flex;
+  margin-left: 5px;
 }
 .producto-color img {
   width: 100%;
@@ -282,7 +290,7 @@ section {
 .section-diseno {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/background/diseno.webp");
   background-position: center;
-  height: auto !important;
+  height: 70vh !important;
   overflow: hidden;
   background-attachment: fixed;
   background-size: cover;
@@ -314,6 +322,16 @@ section {
   padding-bottom: 6%;
 }
 
+.disenada-por {
+  background-color: black;
+  color: white !important;
+  text-align: center !important;
+}
+.disenada-por a {
+  text-decoration: underline !important;
+  color: white !important;
+}
+
 .sello-calidad {
   text-align: center;
   height: 0px !important;
@@ -338,6 +356,11 @@ footer img {
 }
 footer h4 {
   text-decoration: underline;
+}
+footer a {
+  text-decoration: none !important;
+  color: #ffffff !important;
+  cursor: pointer;
 }
 
 /* Para dispositivos pequeños (small) */
@@ -683,6 +706,20 @@ h4 {
 }
 .accordion-button::after {
   background-image: url("../images/icons/specs/arrow.svg");
+}
+
+.whatsapp {
+  position: fixed;
+  z-index: 40;
+  bottom: 10px;
+  right: 10px;
+  width: 90px;
+  height: 90px;
+}
+.whatsapp img {
+  width: 100%;
+  height: auto;
+  animation: bounce 1s ease-in-out infinite;
 }
 
 /*# sourceMappingURL=styles.css.map */

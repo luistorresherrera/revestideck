@@ -94,7 +94,7 @@ section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url("../images/background/diseno.webp");
   background-position: center;
-  height: auto !important;
+  height: 70vh !important;
   overflow: hidden;
   background-attachment: fixed;
   background-size: cover;
@@ -124,4 +124,14 @@ section {
 .caracteristicas {
   padding-top: 3%;
   padding-bottom: 6%;
+}
+
+.disenada-por {
+  background-color: black;
+  color: white !important;
+  text-align: center !important;
+  & a {
+    text-decoration: underline !important;
+    color: white !important;
+  }
 }

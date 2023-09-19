@@ -22,4 +22,9 @@ footer {
   & h4 {
     text-decoration: underline;
   }
+  & a {
+    text-decoration: none !important;
+    color: $white_color !important;
+    cursor: pointer;
+  }
 }

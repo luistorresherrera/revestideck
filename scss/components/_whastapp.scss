@@ -1,0 +1,12 @@
+.whatsapp {
+  position: fixed;
+  z-index: 40;
+  bottom: 10px;
+  right: 10px;
+  @include sizes(90px, 90px);
+
+  & img {
+    @include sizes(100%, auto);
+    animation: bounce 1s ease-in-out infinite;
+  }
+}
