@@ -114,7 +114,7 @@ listaProductoIndex.forEach((element) => {
     `<div class="col-11 col-sm-11 col-md-4 col-lg-4 col-xl-4">
         <div class="card">
         <div class="card-product-image">
-        <img src="${element.url_perfil_producto}" />
+        <img src="./images/productos/perfil/${element.html_name}.jpeg" />
         <div class="card-product-image-type text-end">
         <span>${element.ambientes}</span>
         </div>
@@ -132,7 +132,7 @@ listaProductoIndex.forEach((element) => {
     mensajeColor =
       mensajeColor +
       `<div class="producto-color-chico">
-                <img src="${elementColor.url}" />
+                <img src="./images/productos/colores/${element.html_name}_${elementColor.url}.jpeg" />
                 </div>`;
   });
   mensajeProductos = mensajeProductos + mensajeColor;
@@ -161,54 +161,54 @@ mensajeProductos = mensajeProductos + `</div>`;
 
 document.getElementById("productosX").innerHTML = mensajeProductos;
 
-//Pintar modal de cotización inmediata con productos
-const listaProductos = await traerProducto();
+// //Pintar modal de cotización inmediata con productos
+// const listaProductos = await traerProducto();
 
-let mensajeModalCotizacion = `<div class="modal-dialog modal-dialog-centered">
-<div class="modal-content">
-  <div class="modal-header">
-    <h5 class="modal-title">
-      Selecciona el producto que deseas cotizar:
-    </h5>
-    <button
-      type="button"
-      class="btn-close"
-      data-bs-dismiss="modal"
-      aria-label="Close"
-    ></button>
-  </div>
-  <div class="modal-body">`;
-listaProductos.forEach((element) => {
-  mensajeModalCotizacion =
-    mensajeModalCotizacion +
-    `<a href="./pages/productos/${element.html_name}.html"
-    <div class="d-flex flex-row card-productos-cotizacion">
-  <div class="image-cotizacion">
-    <img src="${element.url_imagen}" />
-  </div>
-  <div class="row d-flex flex-column">
-    <div><h4>${element.nombre}</h4></div>
-    <div>
-      <p>
-      ${element.descripcion_corta}
-      </p>
-    </div>
-  
-</div></a>`;
-});
-mensajeModalCotizacion =
-  mensajeModalCotizacion +
-  `</div>
-<div class="modal-footer">
-  <button
-    type="button"
-    class="btn btn-secondary"
-    data-bs-dismiss="modal"
-  >
-    Cerrar
-  </button>
-</div>
-</div>
-</div>`;
+// let mensajeModalCotizacion = `<div class="modal-dialog modal-dialog-centered">
+// <div class="modal-content">
+//   <div class="modal-header">
+//     <h5 class="modal-title">
+//       Selecciona el producto que deseas cotizar:
+//     </h5>
+//     <button
+//       type="button"
+//       class="btn-close"
+//       data-bs-dismiss="modal"
+//       aria-label="Close"
+//     ></button>
+//   </div>
+//   <div class="modal-body">`;
+// listaProductos.forEach((element) => {
+//   mensajeModalCotizacion =
+//     mensajeModalCotizacion +
+//     `<a href="./pages/productos/${element.html_name}.html"
+//     <div class="d-flex flex-row card-productos-cotizacion">
+//   <div class="image-cotizacion">
+//     <img src="./images/productos/paginas/${element.html_name}.jpeg" />
+//   </div>
+//   <div class="row d-flex flex-column">
+//     <div><h4>${element.nombre}</h4></div>
+//     <div>
+//       <p>
+//       ${element.descripcion_corta}
+//       </p>
+//     </div>
 
-document.getElementById("exampleModal").innerHTML = mensajeModalCotizacion;
+// </div></a>`;
+// });
+// mensajeModalCotizacion =
+//   mensajeModalCotizacion +
+//   `</div>
+// <div class="modal-footer">
+//   <button
+//     type="button"
+//     class="btn btn-secondary"
+//     data-bs-dismiss="modal"
+//   >
+//     Cerrar
+//   </button>
+// </div>
+// </div>
+// </div>`;
+
+// document.getElementById("exampleModal").innerHTML = mensajeModalCotizacion;
