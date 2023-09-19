@@ -12,10 +12,10 @@ const codProducto = document.getElementById("codigoProducto").innerText;
 
 //hacer el preload de las secciones comunes
 document.getElementById("footer").innerHTML = returnFooter();
-document.getElementById("specsWPC").innerHTML = returnSpecsWPC();
+document.getElementById("specsWPC").innerHTML = returnSpecsWPC(1);
 document.getElementById("faqs").innerHTML = returnFaqs();
-document.getElementById("ventajas").innerHTML = returnVentajas();
-document.getElementById("selloCalidad").innerHTML = returnSello();
+document.getElementById("ventajas").innerHTML = returnVentajas(1);
+document.getElementById("selloCalidad").innerHTML = returnSello(1);
 document.getElementById("navegacion").innerHTML = returnNavegacion();
 
 // asigna el resultado del objeto encontrado en la base de datos basado en le código del producto
