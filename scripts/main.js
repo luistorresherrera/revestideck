@@ -4,6 +4,21 @@ import { returnSpecsWPC } from "./common_pages/specs.js";
 import { returnVentajas } from "./common_pages/ventajas.js";
 import { traerProducto } from "./json_connection.js";
 
+// animación en hero
+const typed = new Typed(`.typed`, {
+  stringsElement: `#cadenas-texto`,
+  typeSpeed: 75,
+  startDelay: 10,
+  backSpeed: 75,
+  smartBackspace: true,
+  shuffle: false,
+  backDelay: 1500,
+  loop: true,
+  showCursor: true,
+  cursoChar: `|`,
+  contentType: `html`,
+});
+
 document.getElementById("specsWPC").innerHTML = returnSpecsWPC();
 document.getElementById("faqs").innerHTML = returnFaqs();
 document.getElementById("ventajas").innerHTML = returnVentajas();
@@ -145,18 +160,3 @@ listaProductoIndex.forEach((element) => {
 mensajeProductos = mensajeProductos + `</div>`;
 
 document.getElementById("productosX").innerHTML = mensajeProductos;
-
-// animación en hero
-const typed = new Typed(`.typed`, {
-  stringsElement: `#cadenas-texto`,
-  typeSpeed: 75,
-  startDelay: 10,
-  backSpeed: 75,
-  smartBackspace: true,
-  shuffle: false,
-  backDelay: 1500,
-  loop: true,
-  showCursor: true,
-  cursoChar: `|`,
-  contentType: `html`,
-});
