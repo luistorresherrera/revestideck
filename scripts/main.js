@@ -9,6 +9,21 @@ document.getElementById("faqs").innerHTML = returnFaqs();
 document.getElementById("ventajas").innerHTML = returnVentajas(0);
 document.getElementById("selloCalidad").innerHTML = returnSello(0);
 
+// animación en hero
+const typed = new Typed(`.typed`, {
+  stringsElement: `#cadenas-texto`,
+  typeSpeed: 75,
+  startDelay: 10,
+  backSpeed: 75,
+  smartBackspace: true,
+  shuffle: false,
+  backDelay: 1500,
+  loop: true,
+  showCursor: true,
+  cursoChar: `|`,
+  contentType: `html`,
+});
+
 document.getElementById("btnDiseno").addEventListener("click", () => {
   document.getElementById("nombreDiseno").value =
     localStorage.getItem("nombre_completo");
@@ -200,18 +215,3 @@ mensajeModalCotizacion =
 </div>`;
 
 document.getElementById("exampleModal").innerHTML = mensajeModalCotizacion;
-
-// animación en hero
-const typed = new Typed(`.typed`, {
-  stringsElement: `#cadenas-texto`,
-  typeSpeed: 75,
-  startDelay: 10,
-  backSpeed: 75,
-  smartBackspace: true,
-  shuffle: false,
-  backDelay: 1500,
-  loop: true,
-  showCursor: true,
-  cursoChar: `|`,
-  contentType: `html`,
-});
