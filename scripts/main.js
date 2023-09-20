@@ -162,7 +162,7 @@ mensajeProductos = mensajeProductos + `</div>`;
 document.getElementById("productosX").innerHTML = mensajeProductos;
 
 //Pintar modal de cotización inmediata con productos
-const listaProductos = await traerProducto();
+const listaProductos = traerProducto();
 
 let mensajeModalCotizacion = `<div class="modal-dialog modal-dialog-centered">
 <div class="modal-content">
