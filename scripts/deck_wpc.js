@@ -25,11 +25,14 @@ const producto = await traerDatosProducto(codProducto);
 
 document.getElementById(
   "hero-portada-deck"
-).style.backgroundImage = `url('${producto.url_portada}')`;
+).style.backgroundImage = `url('../../images/productos/portadas/${producto.html_name}.png')`;
 // coloca los datos en el primer cuadro del producto
 document
   .getElementById("imagenProducto")
-  .setAttribute("src", producto.url_imagen);
+  .setAttribute(
+    "src",
+    `../../images/productos/producto/${producto.html_name}.png`
+  );
 document.getElementById("nombreProducto").innerHTML = producto.nombre;
 document.getElementById("categoriaProducto").innerHTML = producto.categoria;
 document.getElementById("valorTablaProducto").innerHTML = `CLP ${Number(
@@ -55,7 +58,7 @@ producto.colores.forEach((element) => {
     `<div class="col producto-color-div">
   <div class="producto-color">
     <img
-      src="${element.url}"
+      src="../../images/productos/colores/${producto.html_name}_${element.url}.png"
     />
   </div>
   <p>${element.color}</p>
@@ -196,10 +199,10 @@ let mensajeModalCotizacion = `<div class="modal-dialog modal-dialog-centered">
 listaProductos.forEach((element) => {
   mensajeModalCotizacion =
     mensajeModalCotizacion +
-    `<a href="./pages/productos/${element.html_name}.html"
+    `<a href="./${element.html_name}.html"
     <div class="d-flex flex-row card-productos-cotizacion">
   <div class="image-cotizacion">
-    <img src="${element.url_imagen}" />
+    <img src="../../images/productos/producto/${element.html_name}.png" />
   </div>
   <div class="row d-flex flex-column">
     <div><h4>${element.nombre}</h4></div>
@@ -439,7 +442,7 @@ listaProductosPage.forEach((element) => {
       `<div class="col-11 col-sm-11 col-md-6 col-lg-5 col-xl-3">
             <div class="card">
             <div class="card-product-image">
-            <img src="${element.url_perfil_producto}" />
+            <img src="../../images/productos/perfil/${element.html_name}.png" />
             <div class="card-product-image-type text-end">
             <span>${element.ambientes}</span>
             </div>
@@ -457,7 +460,7 @@ listaProductosPage.forEach((element) => {
       mensajeColorProductos =
         mensajeColorProductos +
         `<div class="producto-color-chico">
-                    <img src="${elementColor.url}" />
+                    <img src="../../images/productos/colores/${element.html_name}_${elementColor.url}.png" />
                     </div>`;
     });
     mensajeProductosPage = mensajeProductosPage + mensajeColorProductos;
@@ -468,12 +471,12 @@ listaProductosPage.forEach((element) => {
     
               <div class="card-product-detail-button align-self-end">
               <a
-              href="./pages/productos/${element.html_name}.html"
+              href="./${element.html_name}.html"
               class="btnMasDetalles"
               >Más información</a
               >
               <a
-              href="./pages/productos/${element.html_name}.html"
+              href="./${element.html_name}.html"
               class="btnCotizarProducto"
                           >Cotizar</a
                         >

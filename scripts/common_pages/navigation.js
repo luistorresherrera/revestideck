@@ -22,9 +22,9 @@ export function returnNavegacion() {
   <button
     class="navbar-toggler"
     type="button"
-    data-toggle="collapse"
-    data-target="#navbarNav"
-    aria-controls="navbarNav"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown"
     aria-expanded="false"
     aria-label="Toggle navigation"
   >
@@ -32,14 +32,11 @@ export function returnNavegacion() {
   </button>
   <div
     class="collapse navbar-collapse justify-content-end"
-    id="navbarNav"
+    id="navbarNavDropdown"
   >
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a
-          class="nav-link"
-          aria-current="page"
-          href="../../index.html"
+        <a class="nav-link active" aria-current="page" href="../../index.html"
           >Inicio</a
         >
       </li>
@@ -50,7 +47,12 @@ export function returnNavegacion() {
         <a class="nav-link" href="#diseno">Diseño e instalación</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://wa.me/51987494869/?text=Hola%20quisiera%20info..." target="_blank">Contáctanos</a>
+        <a
+          class="nav-link"
+          href="https://wa.me/51987494869/?text=Hola"
+          target="_blank"
+          >Contáctanos</a
+        >
       </li>
       <li class="nav-item">
         <a

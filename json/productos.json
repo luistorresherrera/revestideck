@@ -1,15 +1,15 @@
 [
   {
     "id": "1",
-    "sku": "",
+    "sku": "001-WPC",
     "html_name": "deck_wpc",
     "file_name": "../../images/portadas/deck-wpc.jpeg",
     "url_imagen": "../../images/productos/paginas/deck-wpc.jpeg",
     "url_perfil_producto": "../../images/productos/paginas/deck-wpc.jpeg",
     "url_perfil_producto0": "./images/productos/paginas/deck-wpc.jpeg",
-    "categoria": "Revestimiento de piso y muro",
-    "descripcion": "Este es un producto que permite la ...",
-    "descripcion_corta": "Material ideal para que puedas...",
+    "categoria": "Revestimiento de piso, paredes y techos",
+    "descripcion": "Es un producto versátil y resistente que combina la belleza natural de la madera con la durabilidad del plástico. Ofrece una solución de bajo mantenimiento para espacios exteriores, resistente a la intemperie y de aspecto atractivo, lo que lo convierte en una elección popular para proyectos de terrazas y áreas de entretenimiento al aire libre.",
+    "descripcion_corta": "Es un produto ideal para terrazas, quinchos y piscinas.",
     "material": "WPC",
     "ambientes": "Exteriores e interiores",
     "colores": [
@@ -19,15 +19,15 @@
       },
       {
         "color": "Café caoba",
-        "url": "1"
+        "url": "2"
       },
       {
         "color": "Gris",
-        "url": "1"
+        "url": "3"
       },
       {
         "color": "Gris claro",
-        "url": "1"
+        "url": "4"
       }
     ],
     "nombre": "Deck WPC",
@@ -36,9 +36,9 @@
     "largo_cm": "220",
     "ancho_cm": "15",
     "espesor_mm": "25",
-    "garantia": "En caso tenga algun producto con imperfección o ... 6 meses desde la venta.",
-    "info_adicional": "Este es un producto que no requiere mantenimiento constante debido a que ...",
-    "instalacion": "La instalación de este producto es muy sencillas, las uniones son internas..."
+    "garantia": "Todos los productos vienen sellados y cuentan con una garantía de 6 meses desde la fecha de su venta. En caso, el producto presente algún daño o no cumpla con las especificaciones detalladas del material WPC, entonces se entregarán las piezas de recambio.",
+    "info_adicional": "Este producto presenta alta durabilidad, debido aque resiste la intemperie, no se agrieta ni se astilla y mantiene su aparciencia en el tiempo. Prácticamente no requiere ningún mantenimiento, sin necesidad de selladores o pintura. Es totalmente resistente al agua, lo cual evita la formación de moho y no se pudre. Su superficie es antidelizante, por lo que se vuelve ideal para áreas cercanas a piscinas o zonas húmedas. Permanece en buen estado durante muchos años, por lo que te ayudará a ahorrar a largo plazo. Es un producto que respecta el medio ambiente, evitando la tala de arboles y promoviendo la sostenibilidad en la construcción.",
+    "instalacion": "Este es un producto de facil instalación. Puede cortarse y ensamblarse como la madera, simplificando el proceso de construcción. Las uniones van por dentro, permitiendo así un mejor acabado."
   },
   {
     "id": "2",
@@ -56,18 +56,6 @@
       {
         "color": "Café oscuro",
         "url": "1"
-      },
-      {
-        "color": "Café caoba",
-        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
-      },
-      {
-        "color": "Gris",
-        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
-      },
-      {
-        "color": "Gris claro",
-        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
       }
     ],
     "nombre": "Cortavista WPC",
@@ -94,20 +82,8 @@
     "ambientes": "Exteriores e interiores",
     "colores": [
       {
-        "color": "Café oscuro",
-        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
-      },
-      {
-        "color": "Café caoba",
-        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
-      },
-      {
-        "color": "Gris",
-        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
-      },
-      {
-        "color": "Gris claro",
-        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+        "color": "Marrón oscuro",
+        "url": "1"
       }
     ],
     "nombre": "Wall Panel WPC",
@@ -134,20 +110,12 @@
     "ambientes": "Interiores",
     "colores": [
       {
-        "color": "Café oscuro",
-        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+        "color": "Negro",
+        "url": "1"
       },
       {
-        "color": "Café caoba",
-        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
-      },
-      {
-        "color": "Gris",
-        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
-      },
-      {
-        "color": "Gris claro",
-        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+        "color": "Marrón",
+        "url": "2"
       }
     ],
     "nombre": "Wall Panel",
@@ -174,20 +142,20 @@
     "ambientes": "Exteriores",
     "colores": [
       {
-        "color": "Café oscuro",
-        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
-      },
-      {
-        "color": "Café caoba",
-        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+        "color": "Marrón claro",
+        "url": "1"
       },
       {
         "color": "Gris",
-        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+        "url": "2"
       },
       {
-        "color": "Gris claro",
-        "url": "../../images/productos/paginas/deck-wpc/marron.jpeg"
+        "color": "Marrón",
+        "url": "3"
+      },
+      {
+        "color": "Negro",
+        "url": "4"
       }
     ],
     "nombre": "Siding WPC",

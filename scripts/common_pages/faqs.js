@@ -22,13 +22,7 @@ export function returnFaqs() {
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    WPC, por sus siglas en inglés Wood Plastic Composite, es un
-                    material compuesto que combina fibras de madera y plástico.
-                    Los pisos Deck WPC están hechos de una mezcla de partículas
-                    de madera (60%), polímeros (35%) y aditivos (5%), logrando
-                    una apariencia auténtica de madera sin sus desventajas, como
-                    la necesidad de mantenimiento regular, la deformación o la
-                    susceptibilidad a los insectos y la putrefacción.
+                  WPC son las siglas de "Wood-Plastic Composite" en inglés, que se traduce como "Compuesto de Madera y Plástico" en español. Es un material compuesto que se utiliza comúnmente en la construcción y la fabricación de productos que buscan combinar las propiedades de la madera y el plástico para obtener ventajas específicas. Un producto WPC generalmente está compuesto por una mezcla de fibras de madera o serrín y plástico, a menudo reciclado. La proporción exacta de madera y plástico puede variar según el fabricante y el producto final deseado. Este compuesto se procesa mediante extrusión u otros métodos de moldeo para crear productos como tablas de terrazas, revestimientos de paredes, vallas, muebles de exterior y más.
                   </div>
                 </div>
               </div>
@@ -51,34 +45,7 @@ export function returnFaqs() {
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    El Deck WPC y el Deck PVC son dos de los tipos de piso
-                    preferidos a la hora de buscar un sustituto a la madera para
-                    pisos exteriores. Existen algunas diferencias que debes
-                    evaluar al momento de elegir entre ambos materiales:
-                    Mientras que los pisos “Deck de WPC (Wood Plastic
-                    Composite)” es un compuesto de madera reciclada, polímeros
-                    de plástico y aditivos, los pisos “Deck de PVC (Policloruro
-                    de Vinilo)” son 100% plásticos y están compuestos por una
-                    mezcla de resinas de PVC, estabilizadores y aditivos (no
-                    recicla la madera). Ambos materiales son duraderos y
-                    resistentes a los cambios de clima. Sin embargo, los pisos
-                    Deck de WPC tiene un aspecto semejante a la madera natural,
-                    otorgando una apariencia más cálida y atractiva. En cambio,
-                    los pisos Deck de PVC suelen tener una apariencia más
-                    uniforme y pueden no parecer tan auténticos como la madera.
-                    Finalmente, con pisos Deck de WPC puedes ahorrar hasta un
-                    30% en el costo de tu proyecto, frente al costo con pisos
-                    Deck de PVC. Si estás buscando una opción de piso duradera,
-                    resistente y estéticamente atractiva para tus espacios
-                    exteriores, los pisos Deck WPC son una excelente elección.
-                    Con su aspecto auténtico de madera, su baja necesidad de
-                    mantenimiento y su resistencia a los elementos, ofrecen una
-                    solución práctica y versátil para embellecer tu patio,
-                    terraza o área de piscina. Además, al ser respetuosos con el
-                    medio ambiente, puedes disfrutar de tu nuevo piso con la
-                    tranquilidad de estar tomando una decisión consciente. Así
-                    que considera los pisos Deck WPC como una opción destacada
-                    al planificar tu próximo proyecto de diseño al aire libre.
+                  Las diferencias clave entre WPC (Wood-Plastic Composite) y PVC (Policloruro de Vinilo) se centran en sus componentes, apariencia, resistencia al agua, durabilidad, mantenimiento y costos. WPC combina madera y plástico, imita la madera, es resistente al agua pero requiere algo de mantenimiento, mientras que el PVC es completamente sintético, no imita la madera, es altamente resistente al agua, de bajo mantenimiento y a menudo más costoso.
                   </div>
                 </div>
               </div>
@@ -101,15 +68,7 @@ export function returnFaqs() {
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                  El WPC es una elección atractiva para la decoración debido a su aspecto similar a la madera, versatilidad de diseño, resistencia a la humedad y durabilidad, además de su bajo mantenimiento y contribución a la sostenibilidad.
                   </div>
                 </div>
               </div>
@@ -132,15 +91,7 @@ export function returnFaqs() {
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    Los productos que ofrecemos los puedes adquirir por medio esta página web o puedes comunicarte con nuestros asesores por Whatsapp.
                   </div>
                 </div>
               </div>
@@ -154,7 +105,7 @@ export function returnFaqs() {
                     aria-expanded="false"
                     aria-controls="collapseFive"
                   >
-                    ¿Cómo se instalan estos productos?
+                    ¿En cuánto tiempo me hacen la entrega de los productos?
                   </button>
                 </h2>
                 <div
@@ -163,15 +114,7 @@ export function returnFaqs() {
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    Normalmente las entregas son inmediatas porque los productos los tenemos en stock; sin embargo, en caso se requiera importación, el tiempo de entrega sería dentro de los 45 días calendario.
                   </div>
                 </div>
               </div>

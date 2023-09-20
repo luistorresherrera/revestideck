@@ -109,10 +109,7 @@ export function returnSpecsWPC(codPage) {
       </p>
       <h4>No requiere mantenimiento constante</h4>
       <p>
-        Los pisos Deck WPC son extremadamente duraderos y resistentes a
-        los elementos, lo que los convierte en una opción ideal para
-        áreas expuestas al sol, la lluvia o la humedad. Tus pisos no se
-        deformarán, ni agrietarán, ni pudrirán con el paso del tiempo.
+      La resistencia a la intemperie, la falta de necesidad de selladores o pintura, la resistencia al agua y al moho, la durabilidad y la resistencia a las plagas hacen que los productos WPC sean una opción de bajo mantenimiento para aplicaciones exteriores, lo que los convierte en una elección popular para terrazas, revestimientos y otras aplicaciones al aire libre.
       </p>
       <h4>Resistencia al deslizamiento</h4>
       <p>
