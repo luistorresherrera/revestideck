@@ -50,3 +50,14 @@ export const traerProducto = async () => {
   });
   return arrayProducto;
 };
+
+export const traerProductoIndex = async () => {
+  const arrayProducto = [];
+  const response = await fetch("./json/productos.json");
+  const data = await response.json();
+
+  data.forEach((element) => {
+    arrayProducto.push(element);
+  });
+  return arrayProducto;
+};

@@ -1,7 +1,7 @@
-import { traerProducto } from "./json_connection.js";
+import { traerProductoIndex } from "./json_connection.js";
 
 export async function traerMensajeProductos() {
-  const listaProductoIndex = await traerProducto();
+  const listaProductoIndex = await traerProductoIndex();
 
   // PINTAR PRODUCTOS
 
