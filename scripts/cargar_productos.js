@@ -6,7 +6,7 @@ export async function traerMensajeProductos() {
   // PINTAR PRODUCTOS
 
   let mensajeProductos = `<div id="productos" class="row col-12 text-center">
-  <h3>Productos TOP3</h3>
+  <h3>Productos TOP</h3>
   </div>
   <div class="row d-flex justify-content-around">`;
 
