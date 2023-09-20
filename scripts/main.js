@@ -160,7 +160,7 @@ document
 // });
 // mensajeProductos = mensajeProductos + `</div>`;
 
-document.getElementById("productosX").innerHTML = traerMensajeProductos();
+document.getElementById("productosX").innerHTML = await traerMensajeProductos();
 
 //Pintar modal de cotización inmediata con productos
 
