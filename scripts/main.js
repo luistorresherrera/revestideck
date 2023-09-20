@@ -97,7 +97,7 @@ document
     }
   });
 
-const listaProductoIndex = await traerProducto();
+// const listaProductoIndex = await traerProducto();
 
 // PINTAR PRODUCTOS
 
