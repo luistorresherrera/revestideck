@@ -43,9 +43,7 @@ export function returnNavegacion() {
       <li class="nav-item">
         <a class="nav-link" href="#productos">Productos</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#diseno">Diseño e instalación</a>
-      </li>
+      
       <li class="nav-item">
         <a
           class="nav-link"

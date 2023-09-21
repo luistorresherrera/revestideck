@@ -14,7 +14,7 @@ export function returnFooter() {
             <h4>Links</h4>
             <div><a href="../../index.html" target="_self">Inicio</a></div>
             <div><a href="#productos">Productos</a></div>
-            <div><a href="#diseno">Diseño e instalación</a></div>
+            <div><a href="">Contáctanos</a></div>
             <div><a data-bs-toggle="modal"
             data-bs-target="#exampleModal">Solicitar cotización inmediata</a></div>
           </div>
@@ -35,8 +35,10 @@ export function returnFooter() {
           <div
             class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 mt-3 text-center text-lg-start"
           >
+          <h4>Redes sociales</h4>
+          <p><a href="https://www.instagram.com/revestideck/" target="_blank">Instagram</a></p>
             <h4>Dirección</h4>
-            Marconi N° 287 - Recoleta, RM, Chile
+            <p>Pasaje Marconi N° 287 - Recoleta, RM, Chile</p>
           </div>
         </div>
       </div>`;

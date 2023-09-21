@@ -22,7 +22,7 @@ export function returnFaqs() {
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                  WPC son las siglas de "Wood-Plastic Composite" en inglés, que se traduce como "Compuesto de Madera y Plástico" en español. Es un material compuesto que se utiliza comúnmente en la construcción y la fabricación de productos que buscan combinar las propiedades de la madera y el plástico para obtener ventajas específicas. Un producto WPC generalmente está compuesto por una mezcla de fibras de madera o serrín y plástico, a menudo reciclado. La proporción exacta de madera y plástico puede variar según el fabricante y el producto final deseado. Este compuesto se procesa mediante extrusión u otros métodos de moldeo para crear productos como tablas de terrazas, revestimientos de paredes, vallas, muebles de exterior y más.
+                  WPC son las siglas de "Wood-Plastic Composite" en inglés, que se traduce como "Compuesto de Madera y Plástico" en español. Es un material compuesto que se utiliza comúnmente en la construcción y la fabricación de productos que buscan combinar las propiedades de la madera y el plástico para obtener ventajas específicas. Un producto WPC generalmente está compuesto por una mezcla de fibras de madera o aserrín y plástico, a menudo reciclado. La proporción exacta de madera y plástico puede variar según el fabricante y el producto final deseado. Este compuesto se procesa mediante extrusión u otros métodos de moldeo para crear productos como tablas de terrazas, revestimientos de paredes, vallas, muebles de exterior y más.
                   </div>
                 </div>
               </div>
