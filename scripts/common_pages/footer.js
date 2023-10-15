@@ -6,7 +6,7 @@ export function returnFooter() {
           <div
             class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 footer-margin text-center text-lg-start"
           >
-            <img src="../../images/corp/logo-footer.svg" />
+            <img src="../../images/corp/logo-footer.svg" alt="Revestideck"/>
           </div>
           <div
             class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 footer-margin text-center text-lg-start"

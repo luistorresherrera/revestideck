@@ -15,7 +15,7 @@ export async function returnOtrosProductos(codProducto) {
         `<div class="col-11 col-sm-11 col-md-4 col-lg-4 col-xl-4">
           <div class="card">
           <div class="card-product-image">
-          <img src="${element.url_perfil_producto}" />
+          <img src="${element.url_perfil_producto}" alt="${element.nombre}"/>
           <div class="card-product-image-type text-end">
           <span>${element.ambientes}</span>
           </div>
@@ -33,7 +33,7 @@ export async function returnOtrosProductos(codProducto) {
         mensajeColorProductos =
           mensajeColorProductos +
           `<div class="producto-color-chico">
-                  <img src="${elementColor.url}" />
+                  <img src="${elementColor.url}" alt="${elementColor.color}"/>
                   </div>`;
       });
       mensajeProductosPage = mensajeProductosPage + mensajeColorProductos;

@@ -18,7 +18,7 @@ export async function traerMensajeProductos() {
       `<div class="col-11 col-sm-11 col-md-4 col-lg-4 col-xl-4">
         <div class="card">
         <div class="card-product-image">
-        <img src="./images/productos/perfil/${element.html_name}.png" />
+        <img src="./images/productos/perfil/${element.html_name}.png" alt="${element.nombre}" />
         <div class="card-product-image-type text-end">
         <span>${element.ambientes}</span>
         </div>
@@ -36,7 +36,7 @@ export async function traerMensajeProductos() {
       mensajeColor =
         mensajeColor +
         `<div class="producto-color-chico">
-                <img src="./images/productos/colores/${element.html_name}_${elementColor.url}.png" />
+                <img src="./images/productos/colores/${element.html_name}_${elementColor.url}.png" alt="${elementColor.color}" />
                 </div>`;
     });
     mensajeProductos = mensajeProductos + mensajeColor;

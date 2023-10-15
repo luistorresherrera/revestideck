@@ -21,25 +21,25 @@ export function returnVentajas(codPage) {
           <div
             class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center"
           >
-            <img src="${instalacion}" />
+            <img src="${instalacion}" alt="Facil instalación"/>
             <h4>Reduce tiempos y costos de instalación</h4>
           </div>
           <div
             class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center"
           >
-            <img src="${mantenimiento}" />
+            <img src="${mantenimiento}" alt="No requiere mantenimiento"/>
             <h4>Minimiza el costo de mantenimiento</h4>
           </div>
           <div
             class="col-6 col-xs- col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center"
           >
-            <img src="${stock}" />
+            <img src="${stock}" alt="Tenemos stock de productos"/>
             <h4>Stock variado de productos</h4>
           </div>
           <div
             class="col-6 col-xs- col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center"
           >
-            <img src="${distribucion}" />
+            <img src="${distribucion}" alt="Distribución a nivel nacional"/>
             <h4>Distribución en todo Chile</h4>
           </div>
           <div
@@ -51,7 +51,7 @@ export function returnVentajas(codPage) {
           <div
             class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center"
           >
-            <img src="${asesoria}" />
+            <img src="${asesoria}" alt="Asesoría personalizada"/>
             <h4>Asesoría personalizada</h4>
           </div>
         </div>`;

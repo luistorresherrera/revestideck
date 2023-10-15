@@ -33,6 +33,9 @@ document
     "src",
     `../../images/productos/producto/${producto.html_name}.png`
   );
+document
+  .getElementById("imagenProducto")
+  .setAttribute("alt", `${producto.nombre}`);
 document.getElementById("nombreProducto").innerHTML = producto.nombre;
 document.getElementById("categoriaProducto").innerHTML = producto.categoria;
 document.getElementById("valorTablaProducto").innerHTML = `CLP ${Number(
@@ -58,7 +61,7 @@ producto.colores.forEach((element) => {
     `<div class="col producto-color-div">
   <div class="producto-color">
     <img
-      src="../../images/productos/colores/${producto.html_name}_${element.url}.png"
+      src="../../images/productos/colores/${producto.html_name}_${element.url}.png" alt="${element.color}"
     />
   </div>
   <p>${element.color}</p>
@@ -202,7 +205,7 @@ listaProductos.forEach((element) => {
     `<a href="./${element.html_name}.html"
     <div class="d-flex flex-row card-productos-cotizacion">
   <div class="image-cotizacion">
-    <img src="../../images/productos/producto/${element.html_name}.png" />
+    <img src="../../images/productos/producto/${element.html_name}.png" alt="${element.nombre}"/>
   </div>
   <div class="row d-flex flex-column">
     <div><h4>${element.nombre}</h4></div>
@@ -433,7 +436,7 @@ listaProductosPage.forEach((element) => {
       `<div class="col-11 col-sm-11 col-md-6 col-lg-5 col-xl-3">
             <div class="card">
             <div class="card-product-image">
-            <img src="../../images/productos/perfil/${element.html_name}.png" />
+            <img src="../../images/productos/perfil/${element.html_name}.png" alt="${element.nombre}"/>
             <div class="card-product-image-type text-end">
             <span>${element.ambientes}</span>
             </div>
@@ -451,7 +454,7 @@ listaProductosPage.forEach((element) => {
       mensajeColorProductos =
         mensajeColorProductos +
         `<div class="producto-color-chico">
-                    <img src="../../images/productos/colores/${element.html_name}_${elementColor.url}.png" />
+                    <img src="../../images/productos/colores/${element.html_name}_${elementColor.url}.png" alt="${elementColor.color}"/>
                     </div>`;
     });
     mensajeProductosPage = mensajeProductosPage + mensajeColorProductos;

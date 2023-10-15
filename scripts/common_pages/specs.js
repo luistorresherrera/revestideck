@@ -36,6 +36,7 @@ export function returnSpecsWPC(codPage) {
         <img
           class="specs-item-icon"
           src="${agua}"
+          alt="Resistente al agua y delislizamiento"
         />
         <h4>Resistente al agua</h4>
       </div>
@@ -47,6 +48,7 @@ export function returnSpecsWPC(codPage) {
         <img
           class="specs-item-icon"
           src="${termitas}"
+          alt="Resistente a las termitas"
         />
         <h4>Resistente a las termitas</h4>
       </div>
@@ -58,6 +60,7 @@ export function returnSpecsWPC(codPage) {
         <img
           class="specs-item-icon"
           src="${clima}"
+          alt="Resistente a climas extremos"
         />
         <h4>Resistente a climas extremos</h4>
       </div>
@@ -69,6 +72,7 @@ export function returnSpecsWPC(codPage) {
         <img
           class="specs-item-icon"
           src="${sostenibilidad}"
+          alt="Sostenibilidad mediambiental"
         />
         <h4>Sostenible con el medio ambiente</h4>
       </div>
@@ -80,6 +84,7 @@ export function returnSpecsWPC(codPage) {
         <img
           class="specs-item-icon"
           src="${moho}"
+          alt="Resistente al moho"
         />
         <h4>Resistente al moho y humedad</h4>
       </div>
@@ -91,6 +96,7 @@ export function returnSpecsWPC(codPage) {
         <img
           class="specs-item-icon"
           src="${impactos}"
+          alt="Resistente a los impactos"
         />
         <h4>Resistente a los impactos</h4>
       </div>

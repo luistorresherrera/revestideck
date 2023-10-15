@@ -1,17 +1,21 @@
 export function returnNavegacion() {
   let mensaje = `<nav class="navbar navbar-expand-lg align-middle">
   <div class="nav-logoDiv d-flex justify-content-around">
+  <a class="navbar-brand" href="../../index.html"
+  >
     <img
       src="../../images/corp/favicon.svg"
-      alt="Bootstrap"
+      alt="Revestideck"
       class="logo-isotipoNav"
     />
+    </a>
     <div lass="nav-logoDiv d-flex flex-column justify-content-around">
       <div>
         <a class="navbar-brand" href="../../index.html"
           ><img
             class="logo-nombreNav"
             src="../../images/corp/nombre-revestideck.svg"
+            alt="Revestideck"
         /></a>
       </div>
       <div class="tituloH1-nav align-middle">

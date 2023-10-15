@@ -5,6 +5,6 @@ export function returnSello(codPage) {
     calidad = "./images/icons/calidad.png";
   }
 
-  let mensaje = `<img src="${calidad}" />`;
+  let mensaje = `<img src="${calidad}" alt="Sello de calidad Revestideck" />`;
   return mensaje;
 }
