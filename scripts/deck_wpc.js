@@ -149,7 +149,7 @@ function recalcularPrecio() {
 
   if (Number(document.getElementById("selectTipoCotizacion").value) == 1) {
     precio = Number(inputCantidad.value) * producto.precio_m2;
-    equivalencia = `(Equivale a ${Math.ceil(
+    equivalencia = `(Equivale a ${Math.floor(
       Number(inputCantidad.value) /
         ((Number(producto.largo_cm) / 100) * (Number(producto.ancho_cm) / 100))
     )} tablas)`;
@@ -349,18 +349,9 @@ document.getElementById("celularPresupuesto").addEventListener("input", () => {
   document.getElementById("celularPresupuesto").value = celular;
 });
 
-//pintar modal de diseño
-
-document.getElementById("btnDiseno").addEventListener("click", () => {
-  document.getElementById("nombreDiseno").value =
-    localStorage.getItem("nombre_completo");
-  document.getElementById("celularDiseno").value =
-    localStorage.getItem("celular");
-  document.getElementById("correoDiseno").value = localStorage.getItem("email");
-});
-
 // enviar modal disenño
 //validar los datos cuando el cliente completa el formulario de modal de diseno
+
 document
   .getElementById("btnSolicitarDiseno")
   .addEventListener("click", async () => {
@@ -468,7 +459,7 @@ listaProductosPage.forEach((element) => {
       mensajeProductosPage +
       `</div>
               </div>
-    
+
               <div class="card-product-detail-button align-self-end">
               <a
               href="./${element.html_name}.html"
