@@ -36,9 +36,9 @@ export function returnFooter() {
             class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 mt-3 text-center text-lg-start"
           >
           <h4>Redes sociales</h4>
-          <p><a href="https://www.instagram.com/revestideck/" target="_blank">Instagram</a></p>
+          <div><a href="https://www.instagram.com/revestideck/" target="_blank">Instagram</a></div>
             <h4>Dirección</h4>
-            <p>Pasaje Marconi N° 287 - Recoleta, RM, Chile</p>
+            <div>Pasaje Marconi N° 287 - Recoleta, RM, Chile</div>
           </div>
         </div>
       </div>`;
