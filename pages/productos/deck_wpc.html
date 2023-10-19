@@ -19,7 +19,7 @@
   <body>
     <div class="whatsapp">
       <a
-        href="https://wa.me/51987494869/?text=Hola%20quisiera%20info..."
+        href="https://wa.me/51987494869/?text=Hola,%20quisiera%20informaci&oacute;n%20sobre%20sus%20productos."
         target="_blank"
         ><img src="../../images/icons/whatsapp.png" alt="Whatsapp Revestideck"
       /></a>
@@ -90,7 +90,7 @@
           </div>
         </div>
         <div
-          class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex justify-content-center"
+          class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 justify-content-center"
         >
           <div
             class="producto-cotizador align-items-start justify-content-start"
@@ -116,12 +116,13 @@
                 ></select>
               </div>
 
-              <div>Selecciona la forma en la que deseas cotizar:</div>
+              <div hidden>Selecciona la forma en la que deseas cotizar:</div>
               <div>
                 <select
                   id="selectTipoCotizacion"
                   class="form-select form-select-lg"
                   aria-label="Large select example"
+                  hidden
                 >
                   <option selected value="0">Por tabla</option>
                   <option value="1">Por metro cuadrado (m2)</option>
@@ -154,7 +155,8 @@
             <div class="w-100">
               <p class="text-center">
                 CLP
-                <span class="precio-cotizacion" id="precioFinal"></span>+ IVA
+                <span class="precio-cotizacion" id="precioFinal"></span>(incluye
+                IVA)
               </p>
             </div>
 
@@ -247,16 +249,16 @@
                   <td><lable>Color: </lable></td>
                   <td><strong name="Color" id="colorPresupuesto"></strong></td>
                 </tr>
-                <tr>
+                <tr hidden>
                   <td><lable>Cotización: </lable></td>
                   <td>
-                    <strong id="cantidadPresupuesto" name="Cantidad"></strong>
+                    <strong id="tipoPresupuesto" name="Cantidad"></strong>
                   </td>
                 </tr>
                 <tr>
-                  <td><lable>Cantidad: </lable></td>
+                  <td><lable>Cantidad (tablas): </lable></td>
                   <td>
-                    <strong name="Cotizacion" id="tipoPresupuesto"></strong>
+                    <strong name="Cotizacion" id="cantidadPresupuesto"></strong>
                   </td>
                 </tr>
                 <tr>
@@ -269,6 +271,15 @@
                   </td>
                 </tr>
               </table>
+              <div class="text-end mt-3">
+                <button
+                  id="btnWhatsappCotizacion"
+                  type="button"
+                  class="btn btn-whatsapp"
+                >
+                  Solicitar por Whatsapp
+                </button>
+              </div>
               <hr />
               <h5 class="modal-title mb-3">
                 Déjanos tus datos para contactarte:
@@ -334,16 +345,14 @@
           </div>
 
           <div class="modal-footer">
-            <button
+            <!-- <button
               type="button"
               class="btn btn-secondary"
               data-bs-dismiss="modal"
             >
               Cerrar
-            </button>
-            <button type="button" class="btn btn-whatsapp">
-              Asesor por Whatsapp
-            </button>
+            </button> -->
+
             <button
               type="submit"
               class="btn btn-primary"
@@ -459,5 +468,14 @@
     ></script>
 
     <script type="module" src="../../scripts/detalle_producto.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("gwDnErjU3FQUAuPYY");
+      })();
+    </script>
   </body>
 </html>

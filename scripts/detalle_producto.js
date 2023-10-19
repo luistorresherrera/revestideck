@@ -6,7 +6,8 @@ import { returnSpecsWPC } from "./common_pages/specs.js";
 import { returnVentajas } from "./common_pages/ventajas.js";
 import { returnNavegacion } from "./common_pages/navigation.js";
 import { traerDatosProducto, traerProducto } from "./json_connection.js";
-
+import { cargarSEO } from "./seo.js";
+import { enviarMail } from "./email/email.js";
 //trae el codigo del producto a buscar en base de datos
 const codProducto = document.getElementById("codigoProducto").innerText;
 
@@ -53,6 +54,11 @@ document.getElementById("ambientesProducto").innerHTML = producto.ambientes;
 let htmlColores = "";
 let selectColores = "";
 let countColor = 0;
+
+cargarSEO(
+  `Revestideck: ${producto.nombre} - ${producto.descripcion_corta}`,
+  producto.descripcion
+);
 
 //trae de base de datos todos los colores para ponerlos en el cuadro de descripción y cotización
 producto.colores.forEach((element) => {
@@ -152,7 +158,7 @@ function recalcularPrecio() {
 
   if (Number(document.getElementById("selectTipoCotizacion").value) == 1) {
     precio = Number(inputCantidad.value) * producto.precio_m2;
-    equivalencia = `(Equivale a ${Math.floor(
+    equivalencia = `(Equivale a ${Math.ceil(
       Number(inputCantidad.value) /
         ((Number(producto.largo_cm) / 100) * (Number(producto.ancho_cm) / 100))
     )} tablas)`;
@@ -241,6 +247,22 @@ document.getElementById("btnPresupuesto").addEventListener("click", () => {
   document.getElementById("hiddenProducto").value = document.getElementById(
     "inputNombreProducto"
   ).value;
+  let MensajeWhatsappProducto = `${
+    document.getElementById("inputNombreProducto").value
+  } / Color: ${
+    document.getElementById("selectColorCotizacion").options[
+      document.getElementById("selectColorCotizacion").selectedIndex
+    ].text
+  } / Cantidad (tablas): ${
+    document.getElementById("CantidadCotizador").value
+  }->${
+    document.getElementById("equivalencia").innerHTML
+  } / Precio de Lista: CLP ${
+    document.getElementById("precioFinal").innerHTML
+  } (inc. IVA)`;
+
+  MensajeWhatsappProducto = encodeURIComponent(MensajeWhatsappProducto);
+
   document.getElementById("colorPresupuesto").innerHTML =
     document.getElementById("selectColorCotizacion").options[
       document.getElementById("selectColorCotizacion").selectedIndex
@@ -261,16 +283,23 @@ document.getElementById("btnPresupuesto").addEventListener("click", () => {
   ${document.getElementById("CantidadCotizador").value}    ${
     document.getElementById("equivalencia").innerHTML
   }`;
+
+  document
+    .getElementById("btnWhatsappCotizacion")
+    .setAttribute(
+      "onclick",
+      `window.open('https://wa.me/51987494869/?text=*COTIZACIÓN CON DESCUENTO*: ${MensajeWhatsappProducto}')`
+    );
   document.getElementById("hiddenCantidad").value = `
     ${document.getElementById("CantidadCotizador").value}  -> ${
     document.getElementById("equivalencia").innerHTML
   }`;
   document.getElementById("precioPresupuesto").innerHTML = `CLP ${
     document.getElementById("precioFinal").innerHTML
-  } + IVA`;
+  } (inc. IVA)`;
   document.getElementById("hiddenPrecio").value = `CLP ${
     document.getElementById("precioFinal").innerHTML
-  } + IVA`;
+  } (inc. IVA)`;
 
   document.getElementById("nombrePresupuesto").value =
     localStorage.getItem("nombre_completo");
@@ -335,13 +364,25 @@ document
         document.getElementById("correoPresupuesto").value
       );
 
-      document.getElementById("formPresupuesto").submit();
+      // document.getElementById("formPresupuesto").submit();
+      enviarMail(
+        document.getElementById("nombrePresupuesto").value,
+        document.getElementById("productoPresupuesto").innerHTML,
+        document.getElementById("colorPresupuesto").innerHTML,
+        document.getElementById("cantidadPresupuesto").innerHTML,
+        document.getElementById("precioPresupuesto").innerHTML,
+        `(+56)${document.getElementById("celularPresupuesto").value}`,
+        document.getElementById("correoPresupuesto").value
+      );
       await Swal.fire(
         "¡Solicitud Enviada!",
         "En breve te contactaremos",
         "success"
       );
-      location.reload();
+      document.getElementById("nombrePresupuesto").value = "";
+      document.getElementById("celularPresupuesto").value = "";
+      document.getElementById("correoPresupuesto").value = "";
+      // location.reload();
     }
   });
 

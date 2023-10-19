@@ -1,7 +1,7 @@
 export function returnNavegacion() {
   let mensaje = `<nav class="navbar navbar-expand-lg align-middle">
   <div class="nav-logoDiv d-flex justify-content-around">
-  <a class="navbar-brand" href="../../index.html"
+  <a  href="../../index.html"
   >
     <img
       src="../../images/corp/favicon.svg"
@@ -11,7 +11,7 @@ export function returnNavegacion() {
     </a>
     <div lass="nav-logoDiv d-flex flex-column justify-content-around">
       <div>
-        <a class="navbar-brand" href="../../index.html"
+        <a  href="../../index.html"
           ><img
             class="logo-nombreNav"
             src="../../images/corp/nombre-revestideck.svg"
@@ -40,7 +40,7 @@ export function returnNavegacion() {
   >
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="../../index.html"
+        <a class="nav-link" aria-current="page" href="../../index.html"
           >Inicio</a
         >
       </li>

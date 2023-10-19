@@ -1,15 +1,15 @@
 [
   {
     "id": "1",
+    "nombre": "Deck Piso WPC",
     "sku": "001-WPC",
     "html_name": "deck_wpc",
     "file_name": "../../images/portadas/deck-wpc.jpeg",
     "url_imagen": "../../images/productos/paginas/deck-wpc.jpeg",
     "url_perfil_producto": "../../images/productos/paginas/deck-wpc.jpeg",
-    "url_perfil_producto0": "./images/productos/paginas/deck-wpc.jpeg",
     "categoria": "Revestimiento de piso",
-    "descripcion": "Es un producto versátil y resistente que combina la belleza natural de la madera con la durabilidad del plástico. Ofrece una solución de bajo mantenimiento para espacios exteriores, resistente a la intemperie y de aspecto atractivo, lo que lo convierte en una elección popular para proyectos de terrazas y áreas de entretenimiento al aire libre.",
-    "descripcion_corta": "Es un producto ideal pisos en terrazas, quinchos y piscinas.",
+    "descripcion": "Es un producto versátil y resistente que combina la belleza natural de la madera con la durabilidad de un polimero. Ofrece una solución de bajo mantenimiento para espacios exteriores, resistente a la intemperie y de aspecto atractivo, lo que lo convierte en una elección popular para proyectos de terrazas y áreas de entretenimiento al aire libre.",
+    "descripcion_corta": "Es un producto de gran durabilidad ideal pisos en terrazas, quinchos y piscinas.",
     "material": "WPC",
     "ambientes": "Exterior",
     "colores": [
@@ -30,9 +30,9 @@
         "url": "4"
       }
     ],
-    "nombre": "Deck WPC",
-    "precio_tabla": "11000",
-    "precio_m2": "33000",
+
+    "precio_tabla": "12000",
+    "precio_m2": "36000",
     "largo_cm": "220",
     "ancho_cm": "15",
     "espesor_mm": "25",

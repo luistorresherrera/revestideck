@@ -26,13 +26,13 @@ document.getElementById("faqs").innerHTML = returnFaqs();
 document.getElementById("ventajas").innerHTML = returnVentajas(0);
 document.getElementById("selloCalidad").innerHTML = returnSello(0);
 
-document.getElementById("btnDiseno").addEventListener("click", () => {
-  document.getElementById("nombreDiseno").value =
-    localStorage.getItem("nombre_completo");
-  document.getElementById("celularDiseno").value =
-    localStorage.getItem("celular");
-  document.getElementById("correoDiseno").value = localStorage.getItem("email");
-});
+// document.getElementById("btnDiseno").addEventListener("click", () => {
+//   document.getElementById("nombreDiseno").value =
+//     localStorage.getItem("nombre_completo");
+//   document.getElementById("celularDiseno").value =
+//     localStorage.getItem("celular");
+//   document.getElementById("correoDiseno").value = localStorage.getItem("email");
+// });
 
 document
   .getElementById("btnSolicitarDiseno")

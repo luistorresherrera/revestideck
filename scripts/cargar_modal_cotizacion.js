@@ -23,7 +23,7 @@ export async function traerMensajeCotzacion() {
       `<a href="./pages/productos/${element.html_name}.html"
     <div class="d-flex flex-row card-productos-cotizacion">
   <div class="image-cotizacion">
-    <img src="./images/productos/producto/${element.html_name}.png" />
+    <img src="./images/productos/producto/${element.html_name}.png" alt="${element.nombre}"/>
   </div>
   <div class="row d-flex flex-column">
     <div><h4>${element.nombre}</h4></div>
